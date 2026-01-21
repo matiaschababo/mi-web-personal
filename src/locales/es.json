@@ -1,0 +1,200 @@
+{
+    "nav": {
+        "projects": "Proyectos",
+        "experience": "Trayectoria",
+        "stack": "Herramientas",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "role": "Matias Chababo",
+        "title_prefix": "Arquitecto de",
+        "title_highlight": "Ecosistemas",
+        "title_suffix": "Digitales",
+        "description": "Unifico <1>Marketing</1>, <3>Producto</3> y <5>Tecnología</5>. Construyo soluciones escalables en Web3, Gaming y Streaming desde la estrategia hasta la automatización.",
+        "cta_projects": "Ver Proyectos",
+        "cta_contact": "Contactar"
+    },
+    "about": {
+        "quote_start": "No elijo entre la creatividad y la técnica;",
+        "quote_highlight": "las integro.",
+        "description": "Soy un Arquitecto de Ecosistemas Digitales que combina visión estratégica de CMO con ejecución técnica de Developer. Mi enfoque no es solo construir software o lanzar campañas, sino crear sistemas integrales donde el Marketing alimenta al Producto y la Tecnología escala el Negocio.",
+        "specialties": {
+            "strategy": {
+                "title": "Estrategia & Growth",
+                "desc": "Diseño de ecosistemas escalables"
+            },
+            "code": {
+                "title": "Full Stack Dev",
+                "desc": "React, Node, Python & Solidity"
+            },
+            "automation": {
+                "title": "IA & Automatización",
+                "desc": "Optimización de flujos de trabajo"
+            },
+            "product": {
+                "title": "Product Management",
+                "desc": "Visión end-to-end de producto"
+            }
+        }
+    },
+    "experience": {
+        "title": "Trayectoria",
+        "jobs": {
+            "betbits": {
+                "role": "CMO",
+                "period": "2025 - Presente",
+                "description": "Liderando la estrategia de marketing para un casino cripto mientras construyo infraestructura interna de IA.",
+                "achievements": {
+                    "1": "Desarrollé 'Performance Hub': App que cruza datos de Meta Ads y GA4 para análisis de ROAS en tiempo real.",
+                    "2": "Construí 'SEO Planner + Generator': Automatización de clústeres de contenido y generación de artículos optimizados.",
+                    "3": "Creé 'Help Center AI': Asistente que analiza el sentimiento del usuario y redacta tickets de soporte.",
+                    "4": "Consolidé una cultura 'performance-first', pasando de procesos manuales a flujos asistidos por IA."
+                }
+            },
+            "mixon": {
+                "role": "Productor Ejecutivo y Líder de Crecimiento",
+                "period": "2023 - 2025",
+                "description": "Orquestación de eventos masivos de streaming, incluyendo 'La Pelea del Año', y gestión de influencers de alto perfil.",
+                "achievements": {
+                    "1": "20 Millones de Vistas Totales y 100k espectadores concurrentes en 'La Pelea del Año'.",
+                    "2": "Coordinación técnica y de talento para 14 influencers top-tier.",
+                    "3": "Crecimiento orgánico de redes a +130k seguidores combinados.",
+                    "4": "Implementación de Midjourney y Stable Diffusion para assets creativos."
+                }
+            },
+            "coinary": {
+                "role": "Jefe de Marketing y Desarrollador Web",
+                "period": "2021 - 2024",
+                "description": "Lideré el crecimiento integral del ecosistema de juegos Web3: desde desarrollo web hasta gestión de comunidades.",
+                "achievements": {
+                    "1": "Ejecución de IGO con Binance ($1M USD recaudado).",
+                    "2": "Desarrollo de la página web oficial del ecosistema Coinary.",
+                    "3": "Encargado de SEO y posicionamiento orgánico.",
+                    "4": "Community Manager en Telegram y todas las redes sociales de los juegos.",
+                    "5": "Social Media Manager de Coinary en todas las plataformas."
+                }
+            },
+            "coinarytv": {
+                "role": "Productor Ejecutivo y Manager de YouTube",
+                "period": "2020 - 2022",
+                "description": "Mi primera experiencia laboral. Productor General del canal de YouTube y blogs de Coinary.TV.",
+                "achievements": {
+                    "1": "Crecimiento del canal a 200,000+ suscriptores.",
+                    "2": "YouTube Manager: estrategia de contenido y optimización.",
+                    "3": "Creador de miniaturas (Thumbnail Artist) para todos los videos.",
+                    "4": "Community Manager manejando Instagram del canal."
+                }
+            }
+        }
+    },
+    "projects": {
+        "title": "Proyectos",
+        "subtitle": "Sistemas desplegados en producción. Resultados reales.",
+        "view_details": "Ver Detalles",
+        "view_project": "Ver Proyecto",
+        "my_role": "Mi Rol",
+        "sections": {
+            "challenge": "El Desafío",
+            "solution": "La Solución",
+            "result": "El Resultado"
+        },
+        "items": {
+            "pelea": {
+                "title": "La Pelea del Año",
+                "subtitle": "Producción General & Streaming",
+                "category": "Producción General",
+                "role": "Diseño del timeline, gestión técnica, coordinación de talento",
+                "description": "Orquestación completa de evento masivo de streaming unificando transmisión en vivo con estrategia social.",
+                "challenge": "El mayor desafío fue coordinar una transmisión en vivo de baja latencia para 100k espectadores concurrentes mientras se gestionaba el contenido en tiempo real de 14 influencers en el recinto, sin saturar la red ni perder calidad de broadcast.",
+                "solution": "Implementé una arquitectura híbrida de red con redundancia 5G y fibra dedicada. Diseñé un \"Social Hub\" físico dentro del evento donde los influencers recibían clips editados en tiempo real (Live-to-Tape) listos para subir, sincronizando el hype online con la pelea en vivo.",
+                "result": "Se rompió el récord de audiencia nacional para un evento de este tipo. La latencia se mantuvo bajo 3 segundos y el contenido generado por usuarios (UGC) amplificó el alcance orgánico en un 400% durante la transmisión.",
+                "metrics": {
+                    "0": "20M+ Views Totales",
+                    "1": "100k Viewers en Vivo",
+                    "2": "14 Influencers"
+                }
+            },
+            "binance": {
+                "title": "Binance IGO",
+                "subtitle": "Web3 Growth & Launchpad",
+                "category": "Web3 & Crypto",
+                "role": "Lead de Marketing, estrategia de lanzamiento",
+                "description": "Ejecución de campaña global para lanzamiento de token y NFTs en un mercado de alta volatilidad.",
+                "challenge": "Lanzar una Initial Game Offering (IGO) durante un periodo de alta saturación de mercado, donde la confianza de los usuarios era baja y las plataformas de publicidad tradicional (Meta/Google) bloqueaban constantemente los anuncios crypto.",
+                "solution": "Desarrollé una estrategia de \"Growth de Guerrilla\". Utilizamos influencers de nicho en regiones Tier 2 y 3 (SEA/LATAM) y construimos un sistema de recompensas gamificado en Discord. Para Paid Media, utilizamos landing pages \"puente\" educativas para pasar los filtros de aprobación de anuncios.",
+                "result": "Logramos Sold Out en minutos en la plataforma de Binance. La comunidad de Discord creció a 50k miembros activos reales (sin bots) y el Costo por Adquisición (CPA) se redujo en un 60% comparado con el benchmark de la industria.",
+                "metrics": {
+                    "0": "$1M+ Recaudado",
+                    "1": "Partner Binance",
+                    "2": "CTR 20% Meta Ads"
+                }
+            },
+            "betbits": {
+                "title": "Automatizaciones para Betbits",
+                "subtitle": "Ecosistema de Automatización con IA",
+                "category": "iGaming",
+                "role": "Desarrollador No-Code & Prompt Engineer",
+                "description": "Solución al cuello de botella en análisis de datos y SEO mediante agentes de IA.",
+                "challenge": "El equipo de marketing perdía 15 horas semanales analizando reportes de GA4 y redactando artículos SEO básicos para mantener el tráfico orgánico, limitando el tiempo para estrategia creativa.",
+                "solution": "Creé un pipeline de automatización usando n8n y la API de Gemini. 1) Un agente lee la data de GA4 y genera un resumen ejecutivo diario en Slack. 2) Otro agente toma tendencias de búsqueda y redacta borradores SEO optimizados que solo requieren revisión humana.",
+                "result": "Se eliminó el 40% de la carga operativa manual. La producción de contenido SEO se triplicó sin contratar personal extra, y el equipo pudo enfocarse en optimización de conversión, aumentando el ROI global.",
+                "metrics": {
+                    "0": "0xInfra SEO",
+                    "1": "-40% Tiempo Ops",
+                    "2": "Auto GA4"
+                }
+            },
+            "youtube": {
+                "title": "YouTube Management",
+                "subtitle": "Escalamiento de Canales & Estrategia de Contenido",
+                "category": "Producción Audiovisual",
+                "role": "Productor General & YouTube Manager",
+                "description": "Gestión integral de ecosistemas de video-first. Desde la conceptualización de miniaturas de alto CTR hasta la producción ejecutiva de contenido para canales masivos como CoinaryTV.",
+                "challenge": "Lograr consistencia y calidad visual en un entorno de alta frecuencia de publicación, manteniendo la retención de audiencia en nichos competitivos.",
+                "solution": "Implementé procesos de producción en cadena (Factory Model) para miniaturas y edición. Optimicé títulos y metadatos basándome en análisis de tendencias en tiempo real.",
+                "result": "Crecimiento sostenido del canal principal a más de 200,000 suscriptores. Establecimiento de una identidad visual sólida y reconocible en la plataforma.",
+                "metrics": {
+                    "0": "+200k Suscriptores",
+                    "1": "Millones de Vistas",
+                    "2": "Alta Retención"
+                }
+            },
+            "social": {
+                "title": "Crecimiento en Redes Sociales",
+                "subtitle": "Arquitectura de Comunidades Multi-Plataforma",
+                "category": "Marketing",
+                "role": "Social Media Manager & Community Lead",
+                "description": "Orquestación de la presencia digital unificada para Coinary, Mix On y Betbits a través de Instagram, TikTok, Twitter, Telegram y Discord.",
+                "challenge": "Mantener una voz de marca coherente pero adaptada a cada plataforma (ej. formalidad en LinkedIn vs viralidad en TikTok) y gestionar comunidades activas en tiempo real.",
+                "solution": "Desarrollé sistemas de gestión de comunidades escalables utilizando bots de moderación y flujos de contenido reciclable para maximizar el alcance con recursos optimizados.",
+                "result": "Comunidades vibrantes y seguras en Discord y Telegram. Crecimiento orgánico en redes sociales mediante estrategias de contenido nativo para cada plataforma.",
+                "metrics": {
+                    "0": "+5 Comunidades",
+                    "1": "Engagement Cruzado",
+                    "2": "Soporte 24/7"
+                }
+            }
+        }
+    },
+    "contact": {
+        "title": "Iniciemos Protocolo de Conexión.",
+        "description": "Estoy disponible para consultoría estratégica, dirección de proyectos de alta complejidad o roles de liderazgo en ecosistemas Web3/Tech.",
+        "direct_email": "Email Directo",
+        "form": {
+            "name": "Nombre",
+            "email": "Email",
+            "message": "Mensaje",
+            "submit": "Enviar Transmisión"
+        }
+    },
+    "stack": {
+        "title": "Stack Tecnológico & Herramientas",
+        "subtitle": "Herramientas de ejecución y arquitectura.",
+        "categories": {
+            "Marketing": "Marketing",
+            "IA/Automatización": "IA & Automatización",
+            "Producción/Diseño": "Producción & Diseño",
+            "Web": "Desarrollo Web"
+        }
+    }
+}

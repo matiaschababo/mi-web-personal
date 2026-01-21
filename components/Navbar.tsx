@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { NAV_LINKS } from '../constants';
 import { Menu, X, Command } from 'lucide-react';
+import { LanguageToggle } from './LanguageToggle';
+import { useTranslation } from 'react-i18next';
 
 export const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
+
+  const NAV_LINKS = [
+    { name: t('nav.projects'), href: '#projects' },
+    { name: t('nav.experience'), href: '#experience' },
+    { name: t('nav.stack'), href: '#stack' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,17 +50,24 @@ export const Navbar: React.FC = () => {
             href="#contact"
             className="px-4 py-2 bg-white text-zinc-950 text-sm font-bold rounded hover:bg-zinc-200 transition-colors"
           >
-            Contactar
+            {t('nav.contact')}
           </a>
+
+          <div className="pl-4 border-l border-zinc-800">
+            <LanguageToggle />
+          </div>
         </div>
 
         {/* Mobile Toggle */}
-        <button
-          className="md:hidden text-zinc-300"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? <X /> : <Menu />}
-        </button>
+        <div className="md:hidden flex items-center gap-4">
+          <LanguageToggle />
+          <button
+            className="text-zinc-300"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X /> : <Menu />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Nav */}
@@ -68,6 +83,13 @@ export const Navbar: React.FC = () => {
               {link.name}
             </a>
           ))}
+          <a
+            href="#contact"
+            className="text-zinc-300 py-2 font-bold text-primary"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            {t('nav.contact')}
+          </a>
         </div>
       )}
     </nav>

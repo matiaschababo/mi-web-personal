@@ -1,72 +1,75 @@
 import React from 'react';
 import { Section } from './Section';
 import { Briefcase, Calendar, ChevronRight, ExternalLink } from 'lucide-react';
-
-const EXPERIENCE = [
-    {
-        company: "Betbits",
-        logo: "/betbits-logo.png",
-        link: "https://betbits.com/es",
-        role: "CMO",
-        period: "2025 - Presente",
-        description: "Liderando la estrategia de marketing para un casino cripto mientras construyo infraestructura interna de IA.",
-        achievements: [
-            "Desarrollé 'Performance Hub': App que cruza datos de Meta Ads y GA4 para análisis de ROAS en tiempo real.",
-            "Construí 'SEO Planner + Generator': Automatización de clústeres de contenido y generación de artículos optimizados.",
-            "Creé 'Help Center AI': Asistente que analiza el sentimiento del usuario y redacta tickets de soporte.",
-            "Consolidé una cultura 'performance-first', pasando de procesos manuales a flujos asistidos por IA."
-        ],
-        tech: ["Gemini AI", "Google AI Studio", "Meta Ads", "GA4"]
-    },
-    {
-        company: "Mix On",
-        logo: "/logo mix on.png",
-        link: "https://www.youtube.com/@Mixontv_",
-        role: "Productor Ejecutivo y Líder de Crecimiento",
-        period: "2023 - 2025",
-        description: "Orquestación de eventos masivos de streaming, incluyendo 'La Pelea del Año', y gestión de influencers de alto perfil.",
-        achievements: [
-            "20 Millones de Vistas Totales y 100k espectadores concurrentes en 'La Pelea del Año'.",
-            "Coordinación técnica y de talento para 14 influencers top-tier.",
-            "Crecimiento orgánico de redes a +130k seguidores combinados.",
-            "Implementación de Midjourney y Stable Diffusion para assets creativos."
-        ],
-        tech: ["Streaming", "Producción de Eventos", "Marketing de Influencers"]
-    },
-    {
-        company: "Coinary",
-        logo: "/logo coinary completo.png",
-        link: "http://coinary.com/",
-        role: "Jefe de Marketing y Desarrollador Web",
-        period: "2021 - 2024",
-        description: "Lideré el crecimiento integral del ecosistema de juegos Web3: desde desarrollo web hasta gestión de comunidades.",
-        achievements: [
-            "Ejecución de IGO con Binance ($1M USD recaudado).",
-            "Desarrollo de la página web oficial del ecosistema Coinary.",
-            "Encargado de SEO y posicionamiento orgánico.",
-            "Community Manager en Telegram y todas las redes sociales de los juegos.",
-            "Social Media Manager de Coinary en todas las plataformas."
-        ],
-        tech: ["Web3", "Binance", "SEO", "Comunidades", "Redes Sociales"]
-    },
-    {
-        company: "CoinaryTV",
-        logo: "/logo coinarytv.svg",
-        link: "https://www.youtube.com/@CoinaryTV",
-        role: "Productor Ejecutivo y Manager de YouTube",
-        period: "2020 - 2022",
-        description: "Mi primera experiencia laboral. Productor General del canal de YouTube y blogs de Coinary.TV.",
-        achievements: [
-            "Crecimiento del canal a 200,000+ suscriptores.",
-            "YouTube Manager: estrategia de contenido y optimización.",
-            "Creador de miniaturas (Thumbnail Artist) para todos los videos.",
-            "Community Manager manejando Instagram del canal."
-        ],
-        tech: ["YouTube", "Estrategia de Contenido", "Diseño de Miniaturas", "Instagram"]
-    }
-];
+import { useTranslation } from 'react-i18next';
 
 export const Experience: React.FC = () => {
+    const { t } = useTranslation();
+
+    const EXPERIENCE = [
+        {
+            company: "Betbits",
+            logo: "/betbits-logo.png",
+            link: "https://betbits.com/es",
+            role: t('experience.jobs.betbits.role'),
+            period: t('experience.jobs.betbits.period'),
+            description: t('experience.jobs.betbits.description'),
+            achievements: [
+                t('experience.jobs.betbits.achievements.1'),
+                t('experience.jobs.betbits.achievements.2'),
+                t('experience.jobs.betbits.achievements.3'),
+                t('experience.jobs.betbits.achievements.4')
+            ],
+            tech: ["Gemini AI", "Google AI Studio", "Meta Ads", "GA4"]
+        },
+        {
+            company: "Mix On",
+            logo: "/logo mix on.png",
+            link: "https://www.youtube.com/@Mixontv_",
+            role: t('experience.jobs.mixon.role'),
+            period: t('experience.jobs.mixon.period'),
+            description: t('experience.jobs.mixon.description'),
+            achievements: [
+                t('experience.jobs.mixon.achievements.1'),
+                t('experience.jobs.mixon.achievements.2'),
+                t('experience.jobs.mixon.achievements.3'),
+                t('experience.jobs.mixon.achievements.4')
+            ],
+            tech: ["Streaming", "Producción de Eventos", "Marketing de Influencers"]
+        },
+        {
+            company: "Coinary",
+            logo: "/logo coinary completo.png",
+            link: "http://coinary.com/",
+            role: t('experience.jobs.coinary.role'),
+            period: t('experience.jobs.coinary.period'),
+            description: t('experience.jobs.coinary.description'),
+            achievements: [
+                t('experience.jobs.coinary.achievements.1'),
+                t('experience.jobs.coinary.achievements.2'),
+                t('experience.jobs.coinary.achievements.3'),
+                t('experience.jobs.coinary.achievements.4'),
+                t('experience.jobs.coinary.achievements.5')
+            ],
+            tech: ["Web3", "Binance", "SEO", "Comunidades", "Redes Sociales"]
+        },
+        {
+            company: "CoinaryTV",
+            logo: "/logo coinarytv.svg",
+            link: "https://www.youtube.com/@CoinaryTV",
+            role: t('experience.jobs.coinarytv.role'),
+            period: t('experience.jobs.coinarytv.period'),
+            description: t('experience.jobs.coinarytv.description'),
+            achievements: [
+                t('experience.jobs.coinarytv.achievements.1'),
+                t('experience.jobs.coinarytv.achievements.2'),
+                t('experience.jobs.coinarytv.achievements.3'),
+                t('experience.jobs.coinarytv.achievements.4')
+            ],
+            tech: ["YouTube", "Estrategia de Contenido", "Diseño de Miniaturas", "Instagram"]
+        }
+    ];
+
     return (
         <Section id="experience" className="bg-zinc-900/30">
             <div className="max-w-4xl mx-auto space-y-12">
@@ -74,7 +77,7 @@ export const Experience: React.FC = () => {
                     <div className="bg-primary/10 p-2 rounded-lg text-primary">
                         <Briefcase className="w-6 h-6" />
                     </div>
-                    <h2 className="text-3xl font-display font-bold text-white">Trayectoria</h2>
+                    <h2 className="text-3xl font-display font-bold text-white">{t('experience.title')}</h2>
                 </div>
 
                 <div className="relative space-y-8 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-zinc-800 before:to-transparent">

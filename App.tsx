@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { HelmetProvider } from 'react-helmet-async';
+import './i18n'; // Initialize i18n
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';

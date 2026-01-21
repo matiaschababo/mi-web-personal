@@ -1,17 +1,123 @@
 import React, { useState } from 'react';
 import { Section } from './Section';
-import { PROJECTS } from '../constants';
 import { Project } from '../types';
 import { TrendingUp, X, ExternalLink, ArrowRight, Target, Zap, Award } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const { t } = useTranslation();
+
+  const PROJECTS: Project[] = [
+    {
+      id: '1',
+      title: t('projects.items.pelea.title'),
+      subtitle: t('projects.items.pelea.subtitle'),
+      category: t('projects.items.pelea.category'),
+      image: '/LOGO-PeleaDelAño.png',
+      link: 'https://www.youtube.com/@PeleaDelA%C3%B1o',
+      metrics: [
+        t('projects.items.pelea.metrics.0'),
+        t('projects.items.pelea.metrics.1'),
+        t('projects.items.pelea.metrics.2')
+      ],
+      role: t('projects.items.pelea.role'),
+      description: t('projects.items.pelea.description'),
+      challenge: t('projects.items.pelea.challenge'),
+      solution: t('projects.items.pelea.solution'),
+      result: t('projects.items.pelea.result'),
+      tags: ['Streaming', 'Events', 'Viral', 'OBS'] // Tags kept simple or could be translated if needed
+    },
+    {
+      id: '2',
+      title: t('projects.items.binance.title'),
+      subtitle: t('projects.items.binance.subtitle'),
+      category: t('projects.items.binance.category'),
+      image: '/binance-logo.jpg',
+      link: 'https://www.binance.com/en/nft/event/Dragonary?ref=NFTTW',
+      metrics: [
+        t('projects.items.binance.metrics.0'),
+        t('projects.items.binance.metrics.1'),
+        t('projects.items.binance.metrics.2')
+      ],
+      role: t('projects.items.binance.role'),
+      description: t('projects.items.binance.description'),
+      challenge: t('projects.items.binance.challenge'),
+      solution: t('projects.items.binance.solution'),
+      result: t('projects.items.binance.result'),
+      tags: ['Web3 Growth', 'Community', 'Paid Media', 'Blockchain']
+    },
+    {
+      id: '3',
+      title: t('projects.items.betbits.title'),
+      subtitle: t('projects.items.betbits.subtitle'),
+      category: t('projects.items.betbits.category'),
+      image: '/betbits-logo.png',
+      metrics: [
+        t('projects.items.betbits.metrics.0'),
+        t('projects.items.betbits.metrics.1'),
+        t('projects.items.betbits.metrics.2')
+      ],
+      role: t('projects.items.betbits.role'),
+      description: t('projects.items.betbits.description'),
+      challenge: t('projects.items.betbits.challenge'),
+      solution: t('projects.items.betbits.solution'),
+      result: t('projects.items.betbits.result'),
+      tags: ['AI Auto', 'Gemini API', 'n8n', 'Internal Tools']
+    },
+    {
+      id: '4',
+      title: t('projects.items.youtube.title'),
+      subtitle: t('projects.items.youtube.subtitle'),
+      category: t('projects.items.youtube.category'),
+      image: '/youtube-logo.png',
+      metrics: [
+        t('projects.items.youtube.metrics.0'),
+        t('projects.items.youtube.metrics.1'),
+        t('projects.items.youtube.metrics.2')
+      ],
+      role: t('projects.items.youtube.role'),
+      description: t('projects.items.youtube.description'),
+      challenge: t('projects.items.youtube.challenge'),
+      solution: t('projects.items.youtube.solution'),
+      result: t('projects.items.youtube.result'),
+      tags: ['YouTube', 'Thumbnails', 'Strategy', 'Production']
+    },
+    {
+      id: '5',
+      title: t('projects.items.social.title'),
+      subtitle: t('projects.items.social.subtitle'),
+      category: t('projects.items.social.category'),
+      image: '/social-media-logos.png',
+      metrics: [
+        t('projects.items.social.metrics.0'),
+        t('projects.items.social.metrics.1'),
+        t('projects.items.social.metrics.2')
+      ],
+      role: t('projects.items.social.role'),
+      description: t('projects.items.social.description'),
+      challenge: t('projects.items.social.challenge'),
+      solution: t('projects.items.social.solution'),
+      result: t('projects.items.social.result'),
+      tags: ['Community', 'Social', 'Discord', 'Telegram', 'TikTok']
+    }
+  ];
+
+  const getCategoryColor = (category: string) => {
+    // Check for both Spanish and English category names or use keywords
+    const lower = category.toLowerCase();
+    if (lower.includes('web3') || lower.includes('crypto')) return 'bg-yellow-500/10 border-yellow-500/30 text-yellow-400';
+    if (lower.includes('produc') || lower.includes('general')) return 'bg-red-500/10 border-red-500/30 text-red-400';
+    if (lower.includes('audiovisual')) return 'bg-red-500/10 border-red-500/30 text-red-400';
+    if (lower.includes('igaming')) return 'bg-green-500/10 border-green-500/30 text-green-400';
+    return 'bg-purple-500/10 border-purple-500/30 text-purple-400';
+  };
 
   return (
     <Section
       id="projects"
-      title="Proyectos"
-      subtitle="Sistemas desplegados en producción. Resultados reales."
+      title={t('projects.title')}
+      subtitle={t('projects.subtitle')}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
         {PROJECTS.map((project) => (
@@ -32,12 +138,7 @@ export const Projects: React.FC = () => {
             {/* Content Content */}
             <div className="absolute inset-0 p-6 flex flex-col justify-end items-start z-10">
               <div className="mb-auto pt-2">
-                <span className={`text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full backdrop-blur-md border ${project.category === 'Web3 & Crypto' ? 'bg-yellow-500/10 border-yellow-500/30 text-yellow-400' :
-                    project.category === 'Producción General' ? 'bg-red-500/10 border-red-500/30 text-red-400' :
-                      project.category === 'Producción Audiovisual' ? 'bg-red-500/10 border-red-500/30 text-red-400' :
-                        project.category === 'iGaming' ? 'bg-green-500/10 border-green-500/30 text-green-400' :
-                          'bg-purple-500/10 border-purple-500/30 text-purple-400'
-                  }`}>
+                <span className={`text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full backdrop-blur-md border ${getCategoryColor(project.category)}`}>
                   {project.category}
                 </span>
               </div>
@@ -53,7 +154,7 @@ export const Projects: React.FC = () => {
                 onClick={() => setSelectedProject(project)}
                 className="w-full py-3 rounded-xl bg-white/10 hover:bg-primary hover:text-zinc-950 text-white backdrop-blur-md border border-white/10 transition-all font-medium flex items-center justify-center gap-2"
               >
-                Ver Detalles <ArrowRight className="w-4 h-4" />
+                {t('projects.view_details')} <ArrowRight className="w-4 h-4" />
               </button>
             </div>
           </div>
@@ -107,11 +208,11 @@ export const Projects: React.FC = () => {
                       className="flex items-center gap-2 bg-primary text-zinc-950 px-4 py-2 rounded-lg font-bold hover:bg-primary/80 transition-colors"
                     >
                       <ExternalLink className="w-4 h-4" />
-                      Ver Proyecto
+                      {t('projects.view_project')}
                     </a>
                   )}
                   <div className="bg-zinc-800/50 px-4 py-2 rounded-lg border border-zinc-700">
-                    <span className="text-xs font-bold text-zinc-500 uppercase block mb-1">Mi Rol</span>
+                    <span className="text-xs font-bold text-zinc-500 uppercase block mb-1">{t('projects.my_role')}</span>
                     <span className="text-zinc-200 text-sm">{selectedProject.role}</span>
                   </div>
                 </div>
@@ -134,7 +235,7 @@ export const Projects: React.FC = () => {
 
                 <div className="space-y-3">
                   <div className="flex items-center gap-2 text-red-400 font-bold text-sm uppercase tracking-wider">
-                    <Target className="w-4 h-4" /> El Desafío
+                    <Target className="w-4 h-4" /> {t('projects.sections.challenge')}
                   </div>
                   <p className="text-zinc-400 leading-relaxed text-sm">
                     {selectedProject.challenge}
@@ -143,7 +244,7 @@ export const Projects: React.FC = () => {
 
                 <div className="space-y-3">
                   <div className="flex items-center gap-2 text-indigo-400 font-bold text-sm uppercase tracking-wider">
-                    <Zap className="w-4 h-4" /> La Solución
+                    <Zap className="w-4 h-4" /> {t('projects.sections.solution')}
                   </div>
                   <p className="text-zinc-400 leading-relaxed text-sm">
                     {selectedProject.solution}
@@ -152,7 +253,7 @@ export const Projects: React.FC = () => {
 
                 <div className="space-y-3">
                   <div className="flex items-center gap-2 text-green-400 font-bold text-sm uppercase tracking-wider">
-                    <Award className="w-4 h-4" /> El Resultado
+                    <Award className="w-4 h-4" /> {t('projects.sections.result')}
                   </div>
                   <p className="text-zinc-400 leading-relaxed text-sm">
                     {selectedProject.result}
