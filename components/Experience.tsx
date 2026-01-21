@@ -28,6 +28,7 @@ export const Experience: React.FC = () => {
             link: "https://www.youtube.com/@Mixontv_",
             role: t('experience.jobs.mixon.role'),
             period: t('experience.jobs.mixon.period'),
+            stats: t('experience.jobs.mixon.stats'),
             description: t('experience.jobs.mixon.description'),
             achievements: [
                 t('experience.jobs.mixon.achievements.1'),
@@ -43,6 +44,7 @@ export const Experience: React.FC = () => {
             link: "http://coinary.com/",
             role: t('experience.jobs.coinary.role'),
             period: t('experience.jobs.coinary.period'),
+            stats: t('experience.jobs.coinary.stats'),
             description: t('experience.jobs.coinary.description'),
             achievements: [
                 t('experience.jobs.coinary.achievements.1'),
@@ -59,6 +61,7 @@ export const Experience: React.FC = () => {
             link: "https://www.youtube.com/@CoinaryTV",
             role: t('experience.jobs.coinarytv.role'),
             period: t('experience.jobs.coinarytv.period'),
+            stats: t('experience.jobs.coinarytv.stats'),
             description: t('experience.jobs.coinarytv.description'),
             achievements: [
                 t('experience.jobs.coinarytv.achievements.1'),
@@ -103,9 +106,16 @@ export const Experience: React.FC = () => {
                                             alt={`${job.company} logo`}
                                             className="w-8 h-8 object-contain rounded"
                                         />
-                                        <h3 className="text-lg font-bold text-white group-hover/link:text-primary transition-colors flex items-center gap-2">
+                                        <h3 className="text-lg font-bold text-white group-hover/link:text-primary transition-colors flex items-center gap-2 flex-wrap">
                                             {job.company}
                                             <ExternalLink className="w-4 h-4 opacity-0 group-hover/link:opacity-100 transition-opacity" />
+                                            {/* @ts-ignore */}
+                                            {job.stats && (
+                                                <span className="ml-1 text-xs font-mono font-medium text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded border border-emerald-400/20">
+                                                    {/* @ts-ignore */}
+                                                    {job.stats}
+                                                </span>
+                                            )}
                                         </h3>
                                     </a>
                                     <div className="flex items-center text-xs font-mono text-zinc-500 bg-zinc-950/50 px-2 py-1 rounded">
