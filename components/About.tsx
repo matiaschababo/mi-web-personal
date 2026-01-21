@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section } from './Section';
-import { Globe, Rocket, Target, Star, Zap } from 'lucide-react';
+import { Globe, Rocket, Target, Star, Zap, Radio, Cpu, BarChart3 } from 'lucide-react';
 import { useTranslation, Trans } from 'react-i18next';
 
 export const About: React.FC = () => {
@@ -8,27 +8,27 @@ export const About: React.FC = () => {
 
   const SPECIALTIES = [
     {
-      icon: <Target className="w-10 h-10 transform group-hover:rotate-12 transition-transform duration-500" />,
-      title: t('about.specialties.strategy.title'),
-      desc: t('about.specialties.strategy.desc'),
+      icon: <Globe className="w-10 h-10 transform group-hover:rotate-12 transition-transform duration-500" />,
+      title: t('about.specialties.web3.title'),
+      desc: t('about.specialties.web3.desc'),
       color: "from-blue-500/20 to-blue-600/5"
     },
     {
-      icon: <Globe className="w-10 h-10 transform group-hover:rotate-12 transition-transform duration-500" />,
-      title: t('about.specialties.code.title'),
-      desc: t('about.specialties.code.desc'),
+      icon: <Radio className="w-10 h-10 transform group-hover:rotate-12 transition-transform duration-500" />,
+      title: t('about.specialties.streaming.title'),
+      desc: t('about.specialties.streaming.desc'),
       color: "from-purple-500/20 to-purple-600/5"
     },
     {
-      icon: <Zap className="w-10 h-10 transform group-hover:rotate-12 transition-transform duration-500" />,
-      title: t('about.specialties.automation.title'),
-      desc: t('about.specialties.automation.desc'),
+      icon: <Cpu className="w-10 h-10 transform group-hover:rotate-12 transition-transform duration-500" />,
+      title: t('about.specialties.ai.title'),
+      desc: t('about.specialties.ai.desc'),
       color: "from-emerald-500/20 to-emerald-600/5"
     },
     {
-      icon: <Rocket className="w-10 h-10 transform group-hover:rotate-12 transition-transform duration-500" />,
-      title: t('about.specialties.product.title'),
-      desc: t('about.specialties.product.desc'),
+      icon: <BarChart3 className="w-10 h-10 transform group-hover:rotate-12 transition-transform duration-500" />,
+      title: t('about.specialties.analytics.title'),
+      desc: t('about.specialties.analytics.desc'),
       color: "from-orange-500/20 to-orange-600/5"
     },
   ];

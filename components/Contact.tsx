@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section } from './Section';
-import { Send, Mail, Copy } from 'lucide-react';
+import { Mail, Copy } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export const Contact: React.FC = () => {
@@ -10,53 +10,32 @@ export const Contact: React.FC = () => {
     <Section id="contact" className="relative mb-20">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/5 pointer-events-none"></div>
 
-      <div className="glass-panel rounded-3xl p-8 md:p-12 overflow-hidden relative">
+      <div className="glass-panel rounded-3xl p-8 md:p-12 overflow-hidden relative max-w-3xl mx-auto text-center">
         <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-secondary/20 rounded-full blur-[80px]"></div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
-          <div>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
-              {t('contact.title')}
-            </h2>
-            <p className="text-zinc-400 text-lg mb-8 leading-relaxed">
-              {t('contact.description')}
-            </p>
+        <div className="relative z-10 flex flex-col items-center">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
+            {t('contact.title')}
+          </h2>
 
-            <div className="space-y-4">
-              <div className="flex items-center gap-4 p-4 rounded-2xl bg-zinc-900/50 border border-zinc-800 group hover:border-primary/50 transition-colors">
-                <div className="bg-zinc-800 p-3 rounded-xl text-white group-hover:bg-primary group-hover:text-zinc-950 transition-colors">
-                  <Mail className="w-6 h-6" />
-                </div>
-                <div>
-                  <p className="text-xs text-zinc-500 font-bold uppercase">{t('contact.direct_email')}</p>
-                  <p className="text-white font-mono">m@chababo.com</p>
-                </div>
-                <button className="ml-auto text-zinc-500 hover:text-white" title="Copiar">
-                  <Copy className="w-5 h-5" />
-                </button>
-              </div>
+          <div className="flex items-center gap-4 p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 group hover:border-primary/50 transition-colors mt-4">
+            <div className="bg-zinc-800 p-4 rounded-xl text-white group-hover:bg-primary group-hover:text-zinc-950 transition-colors">
+              <Mail className="w-8 h-8" />
             </div>
-          </div>
-
-          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <label className="text-xs font-bold text-zinc-500 uppercase ml-1">{t('contact.form.name')}</label>
-                <input type="text" className="w-full bg-zinc-950/50 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder={t('contact.form.name')} />
-              </div>
-              <div className="space-y-2">
-                <label className="text-xs font-bold text-zinc-500 uppercase ml-1">{t('contact.form.email')}</label>
-                <input type="email" className="w-full bg-zinc-950/50 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="tu@email.com" />
-              </div>
+            <div className="text-left">
+              <p className="text-sm text-zinc-500 font-bold uppercase tracking-wider">{t('contact.email_label')}</p>
+              <p className="text-xl md:text-2xl text-white font-mono mt-1">m@chababo.com</p>
             </div>
-            <div className="space-y-2">
-              <label className="text-xs font-bold text-zinc-500 uppercase ml-1">{t('contact.form.message')}</label>
-              <textarea className="w-full bg-zinc-950/50 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all min-h-[120px]" placeholder={t('contact.form.message')}></textarea>
-            </div>
-            <button className="w-full bg-primary text-zinc-950 font-bold py-4 rounded-xl hover:bg-white transition-colors flex items-center justify-center gap-2 group">
-              {t('contact.form.submit')} <Send className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <button
+              className="ml-4 p-2 text-zinc-500 hover:text-white transition-colors"
+              title="Copiar"
+              onClick={() => {
+                navigator.clipboard.writeText('m@chababo.com');
+              }}
+            >
+              <Copy className="w-6 h-6" />
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </Section>
