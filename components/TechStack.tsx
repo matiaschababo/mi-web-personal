@@ -28,6 +28,8 @@ export const TechStack: React.FC = () => {
     { name: 'Capcut', category: 'Producción/Diseño' },
     { name: 'WordPress', category: 'Web' },
     { name: 'Elementor', category: 'Web' },
+    { name: 'GitHub', category: 'Web' },
+    { name: 'Vercel', category: 'Web' },
   ];
 
   // Unique categories from the items
