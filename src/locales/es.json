@@ -1,7 +1,7 @@
 {
     "nav": {
         "projects": "Proyectos",
-        "experience": "Trayectoria",
+        "experience": "Experiencia",
         "stack": "Herramientas",
         "contact": "Contacto"
     },
@@ -37,7 +37,7 @@
         }
     },
     "experience": {
-        "title": "Trayectoria",
+        "title": "Experiencia",
         "jobs": {
             "betbits": {
                 "role": "CMO",

@@ -9,8 +9,8 @@ export const Navbar: React.FC = () => {
   const { t } = useTranslation();
 
   const NAV_LINKS = [
-    { name: t('nav.projects'), href: '#projects' },
     { name: t('nav.experience'), href: '#experience' },
+    { name: t('nav.projects'), href: '#projects' },
     { name: t('nav.stack'), href: '#stack' },
   ];
 
