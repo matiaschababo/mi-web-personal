@@ -20,20 +20,19 @@
         "description": "Soy un Arquitecto de Ecosistemas Digitales que combina visión estratégica de CMO con ejecución técnica de Developer. Mi enfoque no es solo construir software o lanzar campañas, sino crear sistemas integrales donde el Marketing alimenta al Producto y la Tecnología escala el Negocio.",
         "specialties": {
             "web3": {
-                "title": "Crecimiento Web3",
-                "desc": "Estrategias de go-to-market"
+                "title": "Crecimiento Web3"
             },
             "streaming": {
-                "title": "Producción de Streaming",
-                "desc": "Eventos de alta concurrencia"
+                "title": "Producción de Streaming"
             },
             "ai": {
-                "title": "Automatización con IA",
-                "desc": "Optimización de flujos de trabajo"
+                "title": "Automatización con IA"
             },
             "analytics": {
-                "title": "Paid Media y Analytics",
-                "desc": "Decisiones basadas en datos"
+                "title": "Paid Media y Analytics"
+            },
+            "igaming": {
+                "title": "iGaming & Casino"
             }
         }
     },
@@ -150,7 +149,7 @@
                 "category": "Producción Audiovisual",
                 "role": "Productor General & YouTube Manager",
                 "description": "Gestión integral de ecosistemas de video-first. Desde la conceptualización de miniaturas de alto CTR hasta la producción ejecutiva de contenido para canales masivos como CoinaryTV.",
-                "challenge": "Lograr consistencia y calidad visual en un entorno de alta frecuencia de publicación, manteniendo la retención de audiencia en nichos competitivos.",
+                "challenge": "Achieving visual consistency and quality in a high-frequency publishing environment, maintaining audience retention in competitive niches.",
                 "solution": "Implementé procesos de producción en cadena (Factory Model) para miniaturas y edición. Optimicé títulos y metadatos basándome en análisis de tendencias en tiempo real.",
                 "result": "Crecimiento sostenido del canal principal a más de 200,000 suscriptores. Establecimiento de una identidad visual sólida y reconocible en la plataforma.",
                 "metrics": {
@@ -165,7 +164,7 @@
                 "category": "Marketing",
                 "role": "Social Media Manager & Community Lead",
                 "description": "Orquestación de la presencia digital unificada para Coinary, Mix On y Betbits a través de Instagram, TikTok, Twitter, Telegram y Discord.",
-                "challenge": "Mantener una voz de marca coherente pero adaptada a cada plataforma (ej. formalidad en LinkedIn vs viralidad en TikTok) y gestionar comunidades activas en tiempo real.",
+                "challenge": "Mantener una voz de marca coherente pero adaptada a cada plataforma (ej. formalidad en LinkedIn vs. virality on TikTok) y gestionar comunidades activas en tiempo real.",
                 "solution": "Desarrollé sistemas de gestión de comunidades escalables utilizando bots de moderación y flujos de contenido reciclable para maximizar el alcance con recursos optimizados.",
                 "result": "Vibrant and safe communities on Discord and Telegram. Crecimiento orgánico en redes sociales mediante estrategias de contenido nativo para cada plataforma.",
                 "metrics": {
@@ -177,8 +176,7 @@
         }
     },
     "contact": {
-        "title": "Contacto",
-        "email_label": "Email Directo"
+        "title": "Contacto"
     },
     "stack": {
         "title": "Stack Tecnológico & Herramientas",

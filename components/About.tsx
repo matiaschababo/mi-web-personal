@@ -10,39 +10,29 @@ export const About: React.FC = () => {
     {
       icon: <Globe className="w-8 h-8" />,
       title: t('about.specialties.web3.title'),
-      desc: t('about.specialties.web3.desc'),
-      color: "text-blue-400 bg-blue-500/10 border-blue-500/20"
     },
     {
       icon: <Radio className="w-8 h-8" />,
       title: t('about.specialties.streaming.title'),
-      desc: t('about.specialties.streaming.desc'),
-      color: "text-purple-400 bg-purple-500/10 border-purple-500/20"
     },
     {
       icon: <Cpu className="w-8 h-8" />,
       title: t('about.specialties.ai.title'),
-      desc: t('about.specialties.ai.desc'),
-      color: "text-emerald-400 bg-emerald-500/10 border-emerald-500/20"
     },
     {
       icon: <BarChart3 className="w-8 h-8" />,
       title: t('about.specialties.analytics.title'),
-      desc: t('about.specialties.analytics.desc'),
-      color: "text-orange-400 bg-orange-500/10 border-orange-500/20"
     },
     {
       icon: <Gamepad2 className="w-8 h-8" />,
       title: t('about.specialties.igaming.title'),
-      desc: t('about.specialties.igaming.desc'),
-      color: "text-red-400 bg-red-500/10 border-red-500/20"
     },
   ];
 
   return (
     <Section id="about" className="relative">
       <div className="max-w-4xl mx-auto text-center mb-20 relative z-10">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
+        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6 animate-fade-in">
           <Star className="w-4 h-4" /> <span>Core Philosophy</span>
         </div>
 
@@ -62,14 +52,15 @@ export const About: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10 justify-items-center">
         {SPECIALTIES.map((item, idx) => (
-          <div key={idx} className="w-full bg-zinc-900/50 p-6 rounded-2xl border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800/80 transition-all group cursor-default">
-            {/* Colored Icon Box */}
-            <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-6 border transition-transform group-hover:scale-110 ${item.color}`}>
-              {item.icon}
+          <div key={idx} className="w-full bg-zinc-900/80 p-8 rounded-2xl border border-primary/20 hover:border-primary shadow-lg shadow-primary/5 hover:shadow-primary/20 transition-all duration-300 group cursor-default backdrop-blur-sm flex flex-col items-center text-center">
+            {/* Icon Box with Cyan Glow */}
+            <div className="w-16 h-16 rounded-2xl bg-zinc-950 flex items-center justify-center mb-6 border border-zinc-800 group-hover:border-primary/50 group-hover:scale-110 transition-all duration-300 shadow-[0_0_15px_rgba(6,182,212,0.1)] group-hover:shadow-[0_0_20px_rgba(6,182,212,0.25)]">
+              <div className="text-white group-hover:text-primary transition-colors">
+                {item.icon}
+              </div>
             </div>
 
-            <h4 className="text-xl font-bold text-white mb-2 leading-tight">{item.title}</h4>
-            <p className="text-sm text-zinc-400 font-medium">{item.desc}</p>
+            <h4 className="text-xl font-bold text-white group-hover:text-primary transition-colors duration-300">{item.title}</h4>
           </div>
         ))}
       </div>

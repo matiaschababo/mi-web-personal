@@ -14,26 +14,21 @@ export const Contact: React.FC = () => {
         <div className="absolute top-0 right-0 -mt-10 -mr-10 w-64 h-64 bg-secondary/20 rounded-full blur-[80px]"></div>
 
         <div className="relative z-10 flex flex-col items-center">
-          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-8">
             {t('contact.title')}
           </h2>
 
-          <div className="flex items-center gap-4 p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 group hover:border-primary/50 transition-colors mt-4">
-            <div className="bg-zinc-800 p-4 rounded-xl text-white group-hover:bg-primary group-hover:text-zinc-950 transition-colors">
-              <Mail className="w-8 h-8" />
-            </div>
-            <div className="text-left">
-              {/* Removed label as requested */}
-              <p className="text-xl md:text-2xl text-white font-mono mt-1">m@chababo.com</p>
-            </div>
+          <div className="inline-flex items-center gap-4 p-4 pl-6 rounded-2xl bg-zinc-950/80 border border-zinc-800 hover:border-primary/50 transition-all duration-300 shadow-lg">
+            <Mail className="w-6 h-6 text-primary" />
+            <span className="text-xl md:text-2xl text-white font-mono tracking-tight">m@chababo.com</span>
             <button
-              className="ml-4 p-2 text-zinc-500 hover:text-white transition-colors"
+              className="ml-2 p-3 rounded-xl hover:bg-zinc-800 text-zinc-500 hover:text-white transition-all"
               title="Copiar"
               onClick={() => {
                 navigator.clipboard.writeText('m@chababo.com');
               }}
             >
-              <Copy className="w-6 h-6" />
+              <Copy className="w-5 h-5" />
             </button>
           </div>
         </div>

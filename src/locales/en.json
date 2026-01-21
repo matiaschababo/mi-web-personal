@@ -20,20 +20,19 @@
         "description": "I am a Digital Ecosystem Architect combining the strategic vision of a CMO with the technical execution of a Developer. My approach is not just building software or launching campaigns, but creating integral systems where Marketing fuels Product and Technology scales the Business.",
         "specialties": {
             "web3": {
-                "title": "Web3 Growth",
-                "desc": "Go-to-market strategies"
+                "title": "Web3 Growth & Strategy"
             },
             "streaming": {
-                "title": "Streaming Production",
-                "desc": "High concurrency events"
+                "title": "Live Streaming Production"
             },
             "ai": {
-                "title": "AI Automation",
-                "desc": "Workflow optimization"
+                "title": "AI Automation & Tools"
             },
             "analytics": {
-                "title": "Paid Media & Analytics",
-                "desc": "Data-driven decisions"
+                "title": "Paid Media & Analytics"
+            },
+            "igaming": {
+                "title": "iGaming & Casino"
             }
         }
     },
@@ -107,7 +106,7 @@
                 "description": "Complete orchestration of massive streaming event unifying live broadcast with social strategy.",
                 "challenge": "The biggest challenge was coordinating a low-latency live stream for 100k concurrent viewers while managing real-time content from 14 influencers at the venue, without saturating the network or losing broadcast quality.",
                 "solution": "Implemented a hybrid network architecture with 5G redundancy and dedicated fiber. Designed a physical 'Social Hub' inside the event where influencers received real-time edited clips (Live-to-Tape) ready to upload, synchronizing online hype with the live fight.",
-                "result": "Broke national viewership records for an event of this type. Latency was kept under 3 seconds and user-generated content (UGC) amplified organic reach by 400% during the broadcast.",
+                "result": "Broke national viewership records for an event of this type. Latency was kept under 3 seconds and user-generated content (UGC) amplificó organic reach by 400% during the broadcast.",
                 "metrics": {
                     "0": "20M+ Total Views",
                     "1": "100k Live Viewers",
@@ -177,15 +176,7 @@
         }
     },
     "contact": {
-        "title": "Initiate Connection Protocol.",
-        "description": "Available for strategic consulting, high-complexity project direction, or leadership roles in Web3/Tech ecosystems.",
-        "direct_email": "Direct Email",
-        "form": {
-            "name": "Name",
-            "email": "Email",
-            "message": "Message",
-            "submit": "Send Transmission"
-        }
+        "title": "Contact"
     },
     "stack": {
         "title": "Tech Stack & Tools",
