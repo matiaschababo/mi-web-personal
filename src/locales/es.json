@@ -16,7 +16,8 @@
     },
     "about": {
         "quote_start": "No elijo entre la creatividad y la técnica;",
-        "quote_highlight": "las integro.",
+        "quote_highlight": "las integro",
+        "core_philosophy": "Filosofía Central",
         "description": "Soy un Arquitecto de Ecosistemas Digitales que combina visión estratégica de CMO con ejecución técnica de Developer. Mi enfoque no es solo construir software o lanzar campañas, sino crear sistemas integrales donde el Marketing alimenta al Producto y la Tecnología escala el Negocio.",
         "specialties": {
             "web3": {
@@ -44,10 +45,10 @@
                 "period": "2025 - Presente",
                 "description": "Liderando la estrategia de marketing para un casino cripto mientras construyo infraestructura interna de IA.",
                 "achievements": {
-                    "1": "Desarrollé 'Performance Hub': App que cruza datos de Meta Ads y GA4 para análisis de ROAS en tiempo real.",
-                    "2": "Construí 'SEO Planner + Generator': Automatización de clústeres de contenido y generación de artículos optimizados.",
-                    "3": "Creé 'Help Center AI': Asistente que analiza el sentimiento del usuario y redacta tickets de soporte.",
-                    "4": "Consolidé una cultura 'performance-first', pasando de procesos manuales a flujos asistidos por IA."
+                    "1": "Desarrollé 'Performance Hub': App que cruza datos de Meta Ads y GA4 para análisis de ROAS en tiempo real",
+                    "2": "Construí 'SEO Planner + Generator': Automatización de clústeres de contenido y generación de artículos optimizados",
+                    "3": "Creé 'Help Center AI': Asistente que analiza el sentimiento del usuario y redacta tickets de soporte",
+                    "4": "Consolidé una cultura 'performance-first', pasando de procesos manuales a flujos asistidos por IA"
                 }
             },
             "mixon": {
@@ -55,10 +56,10 @@
                 "period": "2023 - 2025",
                 "description": "Diseño, construcción y operación integral de un medio de streaming nativo digital desde cero.",
                 "achievements": {
-                    "1": "Producción General y Técnica en Vivo: Lideré la puesta en marcha integral del estudio, el reclutamiento de talento y la operación técnica diaria (Director de Cámaras/Switching) de 4 horas de programación en vivo.",
-                    "2": "Orquestación de Eventos Masivos: Productor General de 'La Pelea del Año', coordinando a 14 influencers y logrando 100k espectadores concurrentes y +20 Millones de vistas totales en redes.",
-                    "3": "Estrategia de Contenido Viral: Ejecución de la estrategia de clips verticales, escalando orgánicamente las comunidades a +130k seguidores combinados (80k TikTok, 60k IG) sin pauta publicitaria.",
-                    "4": "Liderazgo de Equipos: Formación y gestión de equipos. Armado de la grilla de programación desde cero."
+                    "1": "Producción General y Técnica en Vivo: Lideré la puesta en marcha integral del estudio, el reclutamiento de talento y la operación técnica diaria (Director de Cámaras/Switching) de 4 horas de programación en vivo",
+                    "2": "Orquestación de Eventos Masivos: Productor General de 'La Pelea del Año', coordinando a 14 influencers y logrando 100k espectadores concurrentes y +20 Millones de vistas totales en redes",
+                    "3": "Estrategia de Contenido Viral: Ejecución de la estrategia de clips verticales, escalando orgánicamente las comunidades a +130k seguidores combinados (80k TikTok, 60k IG) sin pauta publicitaria",
+                    "4": "Liderazgo de Equipos: Formación y gestión de equipos. Armado de la grilla de programación desde cero"
                 }
             },
             "coinary": {
@@ -66,11 +67,11 @@
                 "period": "2021 - 2024",
                 "description": "Lideré el crecimiento integral del ecosistema de juegos Web3: desde desarrollo web hasta gestión de comunidades.",
                 "achievements": {
-                    "1": "Ejecución de IGO con Binance ($1M USD recaudado).",
-                    "2": "Desarrollo de la página web oficial del ecosistema Coinary.",
-                    "3": "Encargado de SEO y posicionamiento orgánico.",
-                    "4": "Community Manager en Telegram y todas las redes sociales de los juegos.",
-                    "5": "Social Media Manager de Coinary en todas las plataformas."
+                    "1": "Ejecución de IGO con Binance ($1M USD recaudado)",
+                    "2": "Desarrollo de la página web oficial del ecosistema Coinary",
+                    "3": "Encargado de SEO y posicionamiento orgánico",
+                    "4": "Community Manager en Telegram y todas las redes sociales de los juegos",
+                    "5": "Social Media Manager de Coinary en todas las plataformas"
                 }
             },
             "coinarytv": {
@@ -78,10 +79,10 @@
                 "period": "2020 - 2022",
                 "description": "Mi primera experiencia laboral. Productor General del canal de YouTube y blogs de Coinary.TV.",
                 "achievements": {
-                    "1": "Crecimiento del canal a 200,000+ suscriptores.",
-                    "2": "YouTube Manager: estrategia de contenido y optimización.",
-                    "3": "Creador de miniaturas (Thumbnail Artist) para todos los videos.",
-                    "4": "Community Manager manejando Instagram del canal."
+                    "1": "Crecimiento del canal a 200,000+ suscriptores",
+                    "2": "YouTube Manager: estrategia de contenido y optimización",
+                    "3": "Creador de miniaturas (Thumbnail Artist) para todos los videos",
+                    "4": "Community Manager manejando Instagram del canal"
                 }
             }
         }

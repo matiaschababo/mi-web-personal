@@ -16,7 +16,8 @@
     },
     "about": {
         "quote_start": "I don't choose between creativity and technique;",
-        "quote_highlight": "I integrate them.",
+        "quote_highlight": "I integrate them",
+        "core_philosophy": "Core Philosophy",
         "description": "I am a Digital Ecosystem Architect combining the strategic vision of a CMO with the technical execution of a Developer. My approach is not just building software or launching campaigns, but creating integral systems where Marketing fuels Product and Technology scales the Business.",
         "specialties": {
             "web3": {
@@ -44,10 +45,10 @@
                 "period": "2025 - Present",
                 "description": "Leading marketing strategy for a crypto casino while building internal AI infrastructure.",
                 "achievements": {
-                    "1": "Developed 'Performance Hub': App that crosses Meta Ads and GA4 data for real-time ROAS analysis.",
-                    "2": "Built 'SEO Planner + Generator': Automation of content clusters and generation of optimized articles.",
-                    "3": "Created 'Help Center AI': Assistant that analyzes user sentiment and drafts support tickets.",
-                    "4": "Consolidated a 'performance-first' culture, moving from manual processes to AI-assisted flows."
+                    "1": "Developed 'Performance Hub': App that crosses Meta Ads and GA4 data for real-time ROAS analysis",
+                    "2": "Built 'SEO Planner + Generator': Automation of content clusters and generation of optimized articles",
+                    "3": "Created 'Help Center AI': Assistant that analyzes user sentiment and drafts support tickets",
+                    "4": "Consolidated a 'performance-first' culture, moving from manual processes to AI-assisted flows"
                 }
             },
             "mixon": {
@@ -55,10 +56,10 @@
                 "period": "2023 - 2025",
                 "description": "Design, construction, and integral operation of a digital native streaming media from scratch.",
                 "achievements": {
-                    "1": "General & Technical Live Production: Led the full studio setup, talent recruitment, and daily technical operation (Camera Director/Switching) of 4 hours of live programming.",
-                    "2": "Massive Event Orchestration: General Producer of 'The Fight of the Year', coordinating 14 influencers and achieving 100k concurrent viewers and +20 Million total views on social media.",
-                    "3": "Viral Content Strategy: Executed vertical clip strategy (editing & distribution), organically scaling communities to +130k combined followers (80k TikTok, 60k IG) without ad spend.",
-                    "4": "Team Leadership: Team building and management. Created programming grid from scratch."
+                    "1": "General & Technical Live Production: Led the full studio setup, talent recruitment, and daily technical operation (Camera Director/Switching) of 4 hours of live programming",
+                    "2": "Massive Event Orchestration: General Producer of 'The Fight of the Year', coordinating 14 influencers and achieving 100k concurrent viewers and +20 Million total views on social media",
+                    "3": "Viral Content Strategy: Executed vertical clip strategy (editing & distribution), organically scaling communities to +130k combined followers (80k TikTok, 60k IG) without ad spend",
+                    "4": "Team Leadership: Team building and management. Created programming grid from scratch"
                 }
             },
             "coinary": {
@@ -66,11 +67,11 @@
                 "period": "2021 - 2024",
                 "description": "Led the integral growth of the Web3 gaming ecosystem: from web development to community management.",
                 "achievements": {
-                    "1": "Executed IGO with Binance ($1M USD raised).",
-                    "2": "Development of the official Coinary ecosystem website.",
-                    "3": "In charge of SEO and organic positioning.",
-                    "4": "Community Manager on Telegram and all game social networks.",
-                    "5": "Social Media Manager for Coinary across all platforms."
+                    "1": "Executed IGO with Binance ($1M USD raised)",
+                    "2": "Development of the official Coinary ecosystem website",
+                    "3": "In charge of SEO and organic positioning",
+                    "4": "Community Manager on Telegram and all game social networks",
+                    "5": "Social Media Manager for Coinary across all platforms"
                 }
             },
             "coinarytv": {
@@ -78,10 +79,10 @@
                 "period": "2020 - 2022",
                 "description": "My first work experience. General Producer of the YouTube channel and Coinary.TV blogs.",
                 "achievements": {
-                    "1": "Channel growth to 200,000+ subscribers.",
-                    "2": "YouTube Manager: content strategy and optimization.",
-                    "3": "Thumbnail Artist for all videos.",
-                    "4": "Community Manager handling the channel's Instagram."
+                    "1": "Channel growth to 200,000+ subscribers",
+                    "2": "YouTube Manager: content strategy and optimization",
+                    "3": "Thumbnail Artist for all videos",
+                    "4": "Community Manager handling the channel's Instagram"
                 }
             }
         }
