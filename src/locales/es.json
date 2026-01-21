@@ -51,14 +51,14 @@
                 }
             },
             "mixon": {
-                "role": "Productor Ejecutivo y Líder de Crecimiento",
+                "role": "Co-fundador & Productor General",
                 "period": "2023 - 2025",
-                "description": "Orquestación de eventos masivos de streaming, incluyendo 'La Pelea del Año', y gestión de influencers de alto perfil.",
+                "description": "Diseño, construcción y operación integral de un medio de streaming nativo digital desde cero.",
                 "achievements": {
-                    "1": "20 Millones de Vistas Totales y 100k espectadores concurrentes en 'La Pelea del Año'.",
-                    "2": "Coordinación técnica y de talento para 14 influencers top-tier.",
-                    "3": "Crecimiento orgánico de redes a +130k seguidores combinados.",
-                    "4": "Implementación de Midjourney y Stable Diffusion para assets creativos."
+                    "1": "Producción General y Técnica en Vivo: Lideré la puesta en marcha integral del estudio, el reclutamiento de talento y la operación técnica diaria (Director de Cámaras/Switching) de 4 horas de programación en vivo.",
+                    "2": "Orquestación de Eventos Masivos: Productor General de 'La Pelea del Año', coordinando a 14 influencers y logrando 100k espectadores concurrentes y +20 Millones de vistas totales en redes.",
+                    "3": "Estrategia de Contenido Viral: Ejecución de la estrategia de clips verticales, escalando orgánicamente las comunidades a +130k seguidores combinados (80k TikTok, 60k IG) sin pauta publicitaria.",
+                    "4": "Liderazgo de Equipos: Formación y gestión de equipos. Armado de la grilla de programación desde cero."
                 }
             },
             "coinary": {
@@ -99,14 +99,14 @@
         },
         "items": {
             "pelea": {
-                "title": "La Pelea del Año",
+                "title": "La Pelea del Año (El Hito Viral)",
                 "subtitle": "Producción General & Streaming",
                 "category": "Producción General",
-                "role": "Diseño del timeline, gestión técnica, coordinación de talento",
-                "description": "Orquestación completa de evento masivo de streaming unificando transmisión en vivo con estrategia social.",
-                "challenge": "El mayor desafío fue coordinar una transmisión en vivo de baja latencia para 100k espectadores concurrentes mientras se gestionaba el contenido en tiempo real de 14 influencers en el recinto, sin saturar la red ni perder calidad de broadcast.",
-                "solution": "Implementé una arquitectura híbrida de red con redundancia 5G y fibra dedicada. Diseñé un \"Social Hub\" físico dentro del evento donde los influencers recibían clips editados en tiempo real (Live-to-Tape) listos para subir, sincronizando el hype online con la pelea en vivo.",
-                "result": "Se rompió el récord de audiencia nacional para un evento de este tipo. La latencia se mantuvo bajo 3 segundos y el contenido generado por usuarios (UGC) amplificó el alcance orgánico en un 400% durante la transmisión.",
+                "role": "Productor General del Evento",
+                "description": "Orquestación completa del evento de streaming más grande de la ciudad.",
+                "challenge": "El mayor desafío fue la Gestión de Talento High-Profile (coordinación y logística de 14 creadores de contenido para 7 peleas de boxeo) y coordinar una transmisión de baja latencia para 100k concurrentes.",
+                "solution": "Showrunning integral: Creación del guion técnico (Run of Show), timelines y supervisión de la transmisión minuto a minuto. Implementé una arquitectura híbrida de red con redundancia 5G y diseñé un 'Social Hub' físico para sincronizar el hype.",
+                "result": "Impacto Masivo: Responsable de la estrategia de distribución que generó +20 Millones de views en formato corto y retuvo a 100k personas en vivo. Se rompió el récord de audiencia nacional para un evento de este tipo.",
                 "metrics": {
                     "0": "20M+ Views Totales",
                     "1": "100k Viewers en Vivo",

@@ -51,14 +51,14 @@
                 }
             },
             "mixon": {
-                "role": "Executive Producer and Growth Lead",
+                "role": "Co-Founder & General Producer",
                 "period": "2023 - 2025",
-                "description": "Orchestrating massive streaming events, including 'The Fight of the Year', and managing high-profile influencers.",
+                "description": "Design, construction, and integral operation of a digital native streaming media from scratch.",
                 "achievements": {
-                    "1": "20 Million Total Views and 100k concurrent viewers in 'The Fight of the Year'.",
-                    "2": "Technical and talent coordination for 14 top-tier influencers.",
-                    "3": "Organic social growth to +130k combined followers.",
-                    "4": "Implementation of Midjourney and Stable Diffusion for creative assets."
+                    "1": "General & Technical Live Production: Led the full studio setup, talent recruitment, and daily technical operation (Camera Director/Switching) of 4 hours of live programming.",
+                    "2": "Massive Event Orchestration: General Producer of 'The Fight of the Year', coordinating 14 influencers and achieving 100k concurrent viewers and +20 Million total views on social media.",
+                    "3": "Viral Content Strategy: Executed vertical clip strategy (editing & distribution), organically scaling communities to +130k combined followers (80k TikTok, 60k IG) without ad spend.",
+                    "4": "Team Leadership: Team building and management. Created programming grid from scratch."
                 }
             },
             "coinary": {
@@ -99,14 +99,14 @@
         },
         "items": {
             "pelea": {
-                "title": "The Fight of the Year",
+                "title": "The Fight of the Year (Viral Hit)",
                 "subtitle": "General Production & Streaming",
                 "category": "General Production",
-                "role": "Timeline design, technical management, talent coordination",
-                "description": "Complete orchestration of massive streaming event unifying live broadcast with social strategy.",
-                "challenge": "The biggest challenge was coordinating a low-latency live stream for 100k concurrent viewers while managing real-time content from 14 influencers at the venue, without saturating the network or losing broadcast quality.",
-                "solution": "Implemented a hybrid network architecture with 5G redundancy and dedicated fiber. Designed a physical 'Social Hub' inside the event where influencers received real-time edited clips (Live-to-Tape) ready to upload, synchronizing online hype with the live fight.",
-                "result": "Broke national viewership records for an event of this type. Latency was kept under 3 seconds and user-generated content (UGC) amplificó organic reach by 400% during the broadcast.",
+                "role": "General Event Producer",
+                "description": "Complete orchestration of the city's largest streaming event.",
+                "challenge": "The biggest challenge was High-Profile Talent Management (coordination and logistics of 14 content creators for 7 boxing matches) and coordinating a low-latency broadcast for 100k concurrent viewers.",
+                "solution": "Integral Showrunning: Creation of technical script (Run of Show), timelines, and minute-by-minute live broadcast supervision. Implemented a hybrid network architecture with 5G redundancy and designed a physical 'Social Hub' to synchronize hype.",
+                "result": "Massive Impact: Responsible for the distribution strategy that generated +20 Million short-form views and retained 100k live viewers. Broke national viewership records for an event of this type.",
                 "metrics": {
                     "0": "20M+ Total Views",
                     "1": "100k Live Viewers",
