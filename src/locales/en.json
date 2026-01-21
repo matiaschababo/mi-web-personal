@@ -1,6 +1,7 @@
 {
     "nav": {
         "projects": "Projects",
+        "about": "About Me",
         "experience": "Experience",
         "stack": "Tools",
         "contact": "Contact"
