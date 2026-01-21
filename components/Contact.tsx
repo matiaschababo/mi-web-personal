@@ -23,7 +23,7 @@ export const Contact: React.FC = () => {
               <Mail className="w-8 h-8" />
             </div>
             <div className="text-left">
-              <p className="text-sm text-zinc-500 font-bold uppercase tracking-wider">{t('contact.email_label')}</p>
+              {/* Removed label as requested */}
               <p className="text-xl md:text-2xl text-white font-mono mt-1">m@chababo.com</p>
             </div>
             <button
