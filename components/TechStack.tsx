@@ -26,6 +26,8 @@ export const TechStack: React.FC = () => {
     { name: 'Illustrator', category: 'Producción/Diseño' },
     { name: 'Canva', category: 'Producción/Diseño' },
     { name: 'Capcut', category: 'Producción/Diseño' },
+    { name: 'Veo', category: 'Producción/Diseño' },
+    { name: 'Nano Banana', category: 'Producción/Diseño' },
     { name: 'WordPress', category: 'Web' },
     { name: 'Elementor', category: 'Web' },
     { name: 'GitHub', category: 'Web' },
