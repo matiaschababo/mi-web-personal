@@ -19,7 +19,13 @@
         "quote_start": "I don't choose between creativity and technique;",
         "quote_highlight": "I integrate them",
         "core_philosophy": "Core Philosophy",
-        "description": "I am a Digital Ecosystem Architect combining the strategic vision of a CMO with the technical execution of a Developer. My approach is not just building software or launching campaigns, but creating integral systems where Marketing fuels Product and Technology scales the Business.",
+        "description": [
+            "With a background in Psychology and 5 years leading projects in high-uncertainty industries like Crypto, iGaming, and Streaming, my approach is systemic.",
+            "I understand that a massive event doesn't work without solid technical infrastructure, and that the best AI tool is useless if it doesn't solve a real business problem.",
+            "\"From producing a massive event to programming internal AI tools for SEO.\"",
+            "I started by positioning organic content (SEO) and ended up orchestrating complete Web3 ecosystems. I scaled communities to over 200,000 members and managed streaming events with 20 million views.",
+            "Today I operate as an \"Intrapreneur\": I use Generative AI and No-Code to automate the boring and scale the important."
+        ],
         "specialties": {
             "web3": {
                 "title": "Web3 Growth & Strategy"

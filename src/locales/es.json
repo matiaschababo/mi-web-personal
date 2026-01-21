@@ -19,7 +19,13 @@
         "quote_start": "No elijo entre la creatividad y la técnica;",
         "quote_highlight": "las integro",
         "core_philosophy": "Filosofía Central",
-        "description": "Soy un Arquitecto de Ecosistemas Digitales que combina visión estratégica de CMO con ejecución técnica de Developer. Mi enfoque no es solo construir software o lanzar campañas, sino crear sistemas integrales donde el Marketing alimenta al Producto y la Tecnología escala el Negocio.",
+        "description": [
+            "Con un background en Psicología y 5 años liderando proyectos en industrias de alta incertidumbre como Crypto, iGaming y Streaming, mi enfoque es sistémico.",
+            "Entiendo que un evento masivo no funciona sin una infraestructura técnica sólida, y que la mejor herramienta de IA no sirve si no resuelve un problema real del negocio.",
+            "\"Desde producir un evento masivo hasta programar herramientas internas de IA para SEO.\"",
+            "Empecé posicionando contenido orgánico (SEO) y terminé orquestando ecosistemas Web3 completos. Escalé comunidades a más de 200,000 miembros y gestioné eventos de streaming con 20 millones de vistas.",
+            "Hoy opero como un \"Intraemprendedor\": uso IA Generativa y No-Code para automatizar lo aburrido y escalar lo importante."
+        ],
         "specialties": {
             "web3": {
                 "title": "Crecimiento Web3"
