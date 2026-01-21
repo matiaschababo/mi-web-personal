@@ -36,14 +36,14 @@ export const About: React.FC = () => {
           <Star className="w-4 h-4" /> <span>Core Philosophy</span>
         </div>
 
-        <h3 className="text-3xl md:text-4xl font-display font-bold text-white leading-tight">
+        <h2 className="text-3xl md:text-4xl font-display font-bold text-white leading-tight">
           <Trans i18nKey="about.quote_start">
             No elijo entre la creatividad y la técnica;
           </Trans>{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
             {t('about.quote_highlight')}
           </span>
-        </h3>
+        </h2>
 
         <p className="mt-8 text-xl text-zinc-400 leading-relaxed max-w-3xl mx-auto">
           {t('about.description')}
