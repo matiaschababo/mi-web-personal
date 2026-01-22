@@ -56,7 +56,7 @@ export const ThumbnailsCarousel: React.FC = () => {
                     effect={'coverflow'}
                     grabCursor={true}
                     centeredSlides={true}
-                    slidesPerView={'auto'}
+                    slidesPerView={2} // Start with a safe default
                     initialSlide={2}
                     loop={true}
                     autoplay={{
@@ -66,31 +66,31 @@ export const ThumbnailsCarousel: React.FC = () => {
                     }}
                     speed={600}
                     coverflowEffect={{
-                        rotate: 40,
+                        rotate: 35,
                         stretch: 0,
                         depth: 100,
                         modifier: 1,
                         slideShadows: false,
                     }}
                     breakpoints={{
-                        320: {
-                            slidesPerView: 1.5,
-                            spaceBetween: 0
-                        },
                         640: {
-                            slidesPerView: 2.2,
-                            spaceBetween: 0
+                            slidesPerView: 2,
+                            spaceBetween: 20
+                        },
+                        768: {
+                            slidesPerView: 3,
+                            spaceBetween: 30
                         },
                         1024: {
-                            slidesPerView: 3.5,
-                            spaceBetween: 0
+                            slidesPerView: 3, // Clearly show 3 items: left, CENTER, right
+                            spaceBetween: 50 // More space to isolate the center one
                         }
                     }}
                     modules={[EffectCoverflow, Autoplay]}
                     className="thumbnails-swiper !pb-16 !pt-10"
                 >
                     {shuffledThumbnails.map((src, index) => (
-                        <SwiperSlide key={index} className="!w-[280px] md:!w-[450px] aspect-video rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 transition-all duration-500 group">
+                        <SwiperSlide key={index} className="!w-[300px] md:!w-[500px] aspect-video rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 transition-all duration-500 group">
                             <img
                                 src={src}
                                 alt={`Thumbnail ${index + 1}`}
@@ -98,7 +98,7 @@ export const ThumbnailsCarousel: React.FC = () => {
                                 loading="lazy"
                             />
                             {/* Overlay for inactive slides */}
-                            <div className="absolute inset-0 bg-black/40 group-[.swiper-slide-active]:bg-transparent transition-colors duration-500" />
+                            <div className="absolute inset-0 bg-black/60 group-[.swiper-slide-active]:bg-transparent transition-colors duration-500" />
                         </SwiperSlide>
                     ))}
                 </Swiper>
