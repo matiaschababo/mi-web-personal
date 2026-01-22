@@ -198,5 +198,8 @@
             "Producción/Diseño": "Producción & Diseño",
             "Web": "Desarrollo Web"
         }
+    },
+    "thumbnails": {
+        "title": "Producción Visual & Miniaturas"
     }
 }

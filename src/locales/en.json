@@ -198,5 +198,8 @@
             "Producción/Diseño": "Production & Design",
             "Web": "Web Development"
         }
+    },
+    "thumbnails": {
+        "title": "Visual Production & Thumbnails"
     }
 }

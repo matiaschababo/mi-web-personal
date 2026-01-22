@@ -6,7 +6,7 @@ import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Experience } from './components/Experience';
 import { Projects } from './components/Projects';
-
+import { ThumbnailsCarousel } from './components/ThumbnailsCarousel';
 import { TechStack } from './components/TechStack';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
@@ -36,8 +36,8 @@ function App() {
               <About />
               <Experience />
               <Projects />
+              <ThumbnailsCarousel />
               <TechStack />
-
               <Contact />
             </main>
             <Footer />
