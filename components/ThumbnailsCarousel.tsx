@@ -1,12 +1,14 @@
 import React, { useMemo } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Autoplay } from 'swiper/modules';
+import { EffectCoverflow, Autoplay, Navigation } from 'swiper/modules';
 import { Section } from './Section';
 import { useTranslation } from 'react-i18next';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
+import 'swiper/css/navigation';
 
 // Hardcoded list of files from public/thumbnails
 const THUMBNAILS = [
@@ -44,14 +46,22 @@ export const ThumbnailsCarousel: React.FC = () => {
     }, []);
 
     return (
-        <Section id="thumbnails" className="bg-zinc-950/50 py-16 border-t border-zinc-900 overflow-hidden">
+        <Section id="thumbnails" className="bg-zinc-950/50 py-16 border-t border-zinc-900 overflow-hidden relative group/section">
             <div className="text-center mb-10">
-                <h3 className="text-xl md:text-2xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary/80 to-secondary/80">
-                    {t('thumbnails.title', { defaultValue: 'Producción Visual & Miniaturas' })}
+                <h3 className="text-xl md:text-3xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary via-cyan-200 to-secondary animate-gradient-x">
+                    {t('thumbnails.title', { defaultValue: 'Best CTR Thumbnails' })}
                 </h3>
             </div>
 
-            <div className="w-full max-w-[1400px] mx-auto px-4">
+            <div className="w-full max-w-[1600px] mx-auto px-4 relative">
+                {/* Navigation Buttons */}
+                <button className="swiper-button-prev-custom absolute left-2 md:left-10 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center rounded-full bg-black/50 backdrop-blur-sm border border-white/10 text-white hover:bg-primary/20 hover:border-primary/50 transition-all duration-300 opacity-0 group-hover/section:opacity-100 translate-x-[-20px] group-hover/section:translate-x-0">
+                    <ChevronLeft className="w-6 h-6" />
+                </button>
+                <button className="swiper-button-next-custom absolute right-2 md:right-10 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center rounded-full bg-black/50 backdrop-blur-sm border border-white/10 text-white hover:bg-primary/20 hover:border-primary/50 transition-all duration-300 opacity-0 group-hover/section:opacity-100 translate-x-[20px] group-hover/section:translate-x-0">
+                    <ChevronRight className="w-6 h-6" />
+                </button>
+
                 <Swiper
                     effect={'coverflow'}
                     grabCursor={true}
@@ -64,6 +74,10 @@ export const ThumbnailsCarousel: React.FC = () => {
                     loopedSlides={12} // Increased for fast scrolling stability
                     loopAdditionalSlides={5} // Buffer for fast swipes
                     slideToClickedSlide={true}
+                    navigation={{
+                        nextEl: '.swiper-button-next-custom',
+                        prevEl: '.swiper-button-prev-custom',
+                    }}
                     autoplay={{
                         delay: 3000,
                         disableOnInteraction: false,
@@ -85,7 +99,7 @@ export const ThumbnailsCarousel: React.FC = () => {
                             spaceBetween: 60
                         }
                     }}
-                    modules={[EffectCoverflow, Autoplay]}
+                    modules={[EffectCoverflow, Autoplay, Navigation]}
                     className="thumbnails-swiper !pb-20 !pt-10 select-none"
                 >
                     {shuffledThumbnails.map((src, index) => (
