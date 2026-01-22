@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section } from './Section';
-import { Mail, Copy } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
 export const Contact: React.FC = () => {
@@ -18,19 +18,13 @@ export const Contact: React.FC = () => {
             {t('contact.title')}
           </h2>
 
-          <div className="inline-flex items-center gap-4 p-4 pl-6 rounded-2xl bg-zinc-950/80 border border-zinc-800 hover:border-primary/50 transition-all duration-300 shadow-lg">
-            <Mail className="w-6 h-6 text-primary" />
+          <a
+            href="mailto:m@chababo.com"
+            className="inline-flex items-center gap-4 p-4 px-8 rounded-2xl bg-zinc-950/80 border border-zinc-800 hover:border-primary/50 hover:bg-zinc-900 transition-all duration-300 shadow-lg group cursor-pointer"
+          >
+            <Mail className="w-6 h-6 text-primary group-hover:text-white transition-colors" />
             <span className="text-xl md:text-2xl text-white font-mono tracking-tight">m@chababo.com</span>
-            <button
-              className="ml-2 p-3 rounded-xl hover:bg-zinc-800 text-zinc-500 hover:text-white transition-all"
-              title="Copiar"
-              onClick={() => {
-                navigator.clipboard.writeText('m@chababo.com');
-              }}
-            >
-              <Copy className="w-5 h-5" />
-            </button>
-          </div>
+          </a>
         </div>
       </div>
     </Section>
