@@ -6,6 +6,6 @@
     </linearGradient>
   </defs>
   <rect width="512" height="512" rx="120" fill="#18181b" stroke="url(#grad)" stroke-width="20"/>
-  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="280" fill="white">MC</text>
-  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="280" fill="url(#grad)" fill-opacity="0.3" stroke="url(#grad)" stroke-width="4">MC</text>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="280" fill="white">MCH</text>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="280" fill="url(#grad)" fill-opacity="0.3" stroke="url(#grad)" stroke-width="4">MCH</text>
 </svg>

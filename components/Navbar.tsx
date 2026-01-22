@@ -33,7 +33,7 @@ export const Navbar: React.FC = () => {
           <div className="w-8 h-8 bg-primary/10 rounded flex items-center justify-center border border-primary/20">
             <Command className="w-4 h-4 text-primary" />
           </div>
-          <span className="font-display text-lg">MC</span>
+          <span className="font-display text-lg">MCH</span>
         </div>
 
         {/* Desktop Nav */}
