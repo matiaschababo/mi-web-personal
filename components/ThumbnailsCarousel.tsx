@@ -56,49 +56,46 @@ export const ThumbnailsCarousel: React.FC = () => {
                     effect={'coverflow'}
                     grabCursor={true}
                     centeredSlides={true}
-                    slidesPerView={2} // Start with a safe default
+                    slidesPerView={'auto'}
                     initialSlide={2}
                     loop={true}
+                    observer={true}
+                    observeParents={true}
+                    loopedSlides={5} // Ensure enough clones
                     autoplay={{
-                        delay: 2500,
+                        delay: 3000,
                         disableOnInteraction: false,
                         pauseOnMouseEnter: true
                     }}
-                    speed={600}
+                    speed={800}
                     coverflowEffect={{
-                        rotate: 35,
+                        rotate: 0, // Flat film strip
                         stretch: 0,
-                        depth: 100,
-                        modifier: 1,
-                        slideShadows: false,
+                        depth: 200, // Deep perspective
+                        modifier: 1, // Multiplier
+                        slideShadows: false, // Cleaner
                     }}
                     breakpoints={{
                         640: {
-                            slidesPerView: 2,
-                            spaceBetween: 20
-                        },
-                        768: {
-                            slidesPerView: 3,
                             spaceBetween: 30
                         },
                         1024: {
-                            slidesPerView: 3, // Clearly show 3 items: left, CENTER, right
-                            spaceBetween: 50 // More space to isolate the center one
+                            spaceBetween: 60
                         }
                     }}
                     modules={[EffectCoverflow, Autoplay]}
-                    className="thumbnails-swiper !pb-16 !pt-10"
+                    className="thumbnails-swiper !pb-20 !pt-10"
                 >
                     {shuffledThumbnails.map((src, index) => (
-                        <SwiperSlide key={index} className="!w-[300px] md:!w-[500px] aspect-video rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 transition-all duration-500 group">
+                        <SwiperSlide key={index} className="!w-[280px] md:!w-[500px] aspect-video rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 transition-all duration-500 group relative">
                             <img
                                 src={src}
                                 alt={`Thumbnail ${index + 1}`}
                                 className="w-full h-full object-cover"
                                 loading="lazy"
                             />
-                            {/* Overlay for inactive slides */}
-                            <div className="absolute inset-0 bg-black/60 group-[.swiper-slide-active]:bg-transparent transition-colors duration-500" />
+                            {/* Overlay for inactive slides - darker for better contrast */}
+                            <div className="absolute inset-0 bg-black/70 group-[.swiper-slide-active]:bg-transparent transition-colors duration-500" />
                         </SwiperSlide>
                     ))}
                 </Swiper>
