@@ -61,19 +61,21 @@ export const ThumbnailsCarousel: React.FC = () => {
                     loop={true}
                     observer={true}
                     observeParents={true}
-                    loopedSlides={5} // Ensure enough clones
+                    loopedSlides={12} // Increased for fast scrolling stability
+                    loopAdditionalSlides={5} // Buffer for fast swipes
+                    slideToClickedSlide={true}
                     autoplay={{
                         delay: 3000,
                         disableOnInteraction: false,
                         pauseOnMouseEnter: true
                     }}
-                    speed={800}
+                    speed={600} // Snappier recovery
                     coverflowEffect={{
-                        rotate: 0, // Flat film strip
+                        rotate: 0,
                         stretch: 0,
-                        depth: 200, // Deep perspective
-                        modifier: 1, // Multiplier
-                        slideShadows: false, // Cleaner
+                        depth: 200,
+                        modifier: 1,
+                        slideShadows: false,
                     }}
                     breakpoints={{
                         640: {
@@ -84,7 +86,7 @@ export const ThumbnailsCarousel: React.FC = () => {
                         }
                     }}
                     modules={[EffectCoverflow, Autoplay]}
-                    className="thumbnails-swiper !pb-20 !pt-10"
+                    className="thumbnails-swiper !pb-20 !pt-10 select-none"
                 >
                     {shuffledThumbnails.map((src, index) => (
                         <SwiperSlide key={index} className="!w-[280px] md:!w-[500px] aspect-video rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 transition-all duration-500 group relative">
