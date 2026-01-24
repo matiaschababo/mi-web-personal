@@ -44,7 +44,7 @@ export const Experience: React.FC = () => {
             link: "http://coinary.com/",
             role: t('experience.jobs.coinary.role'),
             period: t('experience.jobs.coinary.period'),
-            stats: t('experience.jobs.coinary.stats'),
+            stats: [t('experience.jobs.coinary.stats'), t('experience.jobs.coinary.stats_users')],
             description: t('experience.jobs.coinary.description'),
             achievements: [
                 t('experience.jobs.coinary.achievements.1'),
@@ -111,10 +111,18 @@ export const Experience: React.FC = () => {
                                             <ExternalLink className="w-4 h-4 opacity-0 group-hover/link:opacity-100 transition-opacity" />
                                             {/* @ts-ignore */}
                                             {job.stats && (
-                                                <span className="ml-1 text-xs font-mono font-medium text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded border border-emerald-400/20">
-                                                    {/* @ts-ignore */}
-                                                    {job.stats}
-                                                </span>
+                                                Array.isArray(job.stats) ? (
+                                                    job.stats.map((stat, i) => (
+                                                        <span key={i} className="text-xs font-mono font-medium text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded border border-emerald-400/20">
+                                                            {stat}
+                                                        </span>
+                                                    ))
+                                                ) : (
+                                                    <span className="ml-1 text-xs font-mono font-medium text-emerald-400 bg-emerald-400/10 px-2 py-0.5 rounded border border-emerald-400/20">
+                                                        {/* @ts-ignore */}
+                                                        {job.stats}
+                                                    </span>
+                                                )
                                             )}
                                         </h3>
                                     </a>
