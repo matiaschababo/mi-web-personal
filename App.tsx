@@ -26,7 +26,7 @@ function App() {
     <HelmetProvider>
       <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans selection:bg-primary/30 selection:text-white overflow-x-hidden">
         <SEO />
-        {window.location.pathname !== '/' && window.location.pathname !== '/index.html' ? (
+        {(typeof window !== 'undefined' && window.location.pathname !== '/' && window.location.pathname !== '/index.html') ? (
           <NotFound />
         ) : (
           <>
