@@ -96,7 +96,7 @@
                 }
             },
             "coinarytv": {
-                "role": "Productor Ejecutivo y Manager de YouTube",
+                "role": "Productor General y Manager de YouTube",
                 "stats": "+200k Seguidores",
                 "period": "2020 - 2022",
                 "description": "Mi primera experiencia laboral. Productor General del canal de YouTube y blogs de Coinary.TV.",
@@ -110,7 +110,8 @@
         },
         "tags": {
             "my_agency": "Mi Agencia",
-            "plus_30_streamers": "+30 Streamers"
+            "plus_30_streamers": "+30 Streamers",
+            "visit_web": "Visitar Web"
         }
     },
     "projects": {
