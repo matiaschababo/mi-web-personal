@@ -47,6 +47,17 @@
     "experience": {
         "title": "Experience",
         "jobs": {
+            "zeroed": {
+                "role": "Founder",
+                "period": "2025 - Present",
+                "description": "Growth Operations & Paid Media Consultancy. We design scalable acquisition infrastructures on Meta Ads, powered by creative engineering and AI automation to dominate high-complexity niches.",
+                "achievements": {
+                    "1": "Paid Social Architecture: Aggressive budget management on Meta Ads with a 'Precision-First' approach.",
+                    "2": "Creative Engineering: Fusion of visual strategy and systematic testing to beat creative fatigue.",
+                    "3": "AI-Enhanced Operations: Implementation of AI agents and automation flows (Gemini/n8n) for data analysis.",
+                    "4": "Risk & Compliance Protocols: Bulletproof deployment strategies for operating in high-risk verticals (iGaming/Web3)."
+                }
+            },
             "betbits": {
                 "role": "CMO",
                 "period": "2025 - Present",
@@ -110,6 +121,21 @@
             "result": "The Result"
         },
         "items": {
+            "zeroed": {
+                "title": "Zeroed Growth",
+                "subtitle": "Precision Growth Infrastructure",
+                "category": "Growth Infrastructure",
+                "role": "Founder",
+                "description": "Infrastructure designed to eliminate operational fat and focus exclusively on the signal (ROI).",
+                "challenge": "The Origin: For 5 years I operated at the extremes of the digital spectrum: from scaling communities of 200k+ users at Coinary to producing 100k-viewer events at Mix On. In that process, I detected a systemic inefficiency: the market is saturated with 'Noise'. Brands burn budget on vanity metrics and slow agencies. Zeroed was born not as just another agency, but as the answer to that inefficiency.",
+                "solution": "The Thesis: My thesis is simple: Precision Over Noise. Zeroed is the culmination of my experience managing risk and volume. We don't seek to 'sell services', we seek to deploy systems. We merge traffic engineering (Meta Ads) with automation (AI/n8n) to create an acquisition model that doesn't rely on luck, but on data architecture.",
+                "result": "The Leverage: This project was not born from cold pitching. Zeroed was built on the foundation of reputation and results obtained in the trenches of Betbits and Web3. It is the materialization of my work method: aggressive on objectives, surgical in execution.",
+                "metrics": {
+                    "0": "Precision Over Noise",
+                    "1": "Ad Tech Architecture",
+                    "2": "Full-Stack Growth"
+                }
+            },
             "pelea": {
                 "title": "The Fight of the Year",
                 "subtitle": "General Production & Streaming",

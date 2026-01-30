@@ -10,6 +10,25 @@ export const Projects: React.FC = () => {
 
   const PROJECTS: Project[] = [
     {
+      id: '0',
+      title: t('projects.items.zeroed.title'),
+      subtitle: t('projects.items.zeroed.subtitle'),
+      category: t('projects.items.zeroed.category'),
+      image: '/zeroed-full-logo.png',
+      link: 'https://zeroedgrowth.com/',
+      metrics: [
+        t('projects.items.zeroed.metrics.0'),
+        t('projects.items.zeroed.metrics.1'),
+        t('projects.items.zeroed.metrics.2')
+      ],
+      role: t('projects.items.zeroed.role'),
+      description: t('projects.items.zeroed.description'),
+      challenge: t('projects.items.zeroed.challenge'),
+      solution: t('projects.items.zeroed.solution'),
+      result: t('projects.items.zeroed.result'),
+      tags: ['Growth', 'Meta Ads', 'AI Automation', 'Systemic']
+    },
+    {
       id: '1',
       title: t('projects.items.pelea.title'),
       subtitle: t('projects.items.pelea.subtitle'),
@@ -110,6 +129,7 @@ export const Projects: React.FC = () => {
     if (lower.includes('produc') || lower.includes('general')) return 'bg-red-500/10 border-red-500/30 text-red-400';
     if (lower.includes('audiovisual')) return 'bg-red-500/10 border-red-500/30 text-red-400';
     if (lower.includes('igaming')) return 'bg-green-500/10 border-green-500/30 text-green-400';
+    if (lower.includes('growth')) return 'bg-orange-500/10 border-orange-500/30 text-orange-400';
     return 'bg-purple-500/10 border-purple-500/30 text-purple-400';
   };
 

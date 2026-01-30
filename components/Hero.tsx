@@ -67,7 +67,7 @@ export const Hero: React.FC = () => {
               {/* Profile Image Container */}
               <div className="absolute inset-8 rounded-full overflow-hidden border-2 border-zinc-700/50 shadow-2xl">
                 <img
-                  src="/profile.jpeg"
+                  src="/zeroed-logo.png"
                   alt="Matias Chababo"
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-700 grayscale hover:grayscale-0"
                 />

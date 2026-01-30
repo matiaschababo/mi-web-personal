@@ -8,6 +8,21 @@ export const Experience: React.FC = () => {
 
     const EXPERIENCE = [
         {
+            company: "Zeroed Growth",
+            logo: "/zeroed-logo.png",
+            link: "https://zeroedgrowth.com/",
+            role: t('experience.jobs.zeroed.role'),
+            period: t('experience.jobs.zeroed.period'),
+            description: t('experience.jobs.zeroed.description'),
+            achievements: [
+                t('experience.jobs.zeroed.achievements.1'),
+                t('experience.jobs.zeroed.achievements.2'),
+                t('experience.jobs.zeroed.achievements.3'),
+                t('experience.jobs.zeroed.achievements.4')
+            ],
+            tech: ["Meta Ads Expert", "Growth Ops", "AI Automation", "Creative Strategy"]
+        },
+        {
             company: "Betbits",
             logo: "/betbits-logo.png",
             link: "https://betbits.com/es",
