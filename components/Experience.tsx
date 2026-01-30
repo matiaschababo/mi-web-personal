@@ -13,6 +13,7 @@ export const Experience: React.FC = () => {
             link: "https://zeroedgrowth.com/",
             role: t('experience.jobs.zeroed.role'),
             period: t('experience.jobs.zeroed.period'),
+            stats: t('experience.tags.my_agency'),
             description: t('experience.jobs.zeroed.description'),
             achievements: [
                 t('experience.jobs.zeroed.achievements.1'),
@@ -20,7 +21,7 @@ export const Experience: React.FC = () => {
                 t('experience.jobs.zeroed.achievements.3'),
                 t('experience.jobs.zeroed.achievements.4')
             ],
-            tech: [t('experience.tags.my_agency'), "Meta Ads Expert", "Growth Ops", "AI Automation", "Creative Strategy"]
+            tech: ["Meta Ads Expert", "Growth Ops", "AI Automation", "Creative Strategy"]
         },
         {
             company: "Betbits",
@@ -28,6 +29,7 @@ export const Experience: React.FC = () => {
             link: "https://betbits.com/es",
             role: t('experience.jobs.betbits.role'),
             period: t('experience.jobs.betbits.period'),
+            stats: t('experience.tags.plus_30_streamers'),
             description: t('experience.jobs.betbits.description'),
             achievements: [
                 t('experience.jobs.betbits.achievements.1'),
@@ -35,7 +37,7 @@ export const Experience: React.FC = () => {
                 t('experience.jobs.betbits.achievements.3'),
                 t('experience.jobs.betbits.achievements.4')
             ],
-            tech: [t('experience.tags.plus_30_streamers'), "Gemini AI", "Google AI Studio", "Meta Ads", "GA4"]
+            tech: ["Gemini AI", "Google AI Studio", "Meta Ads", "GA4"]
         },
         {
             company: "Mix On",
@@ -161,14 +163,11 @@ export const Experience: React.FC = () => {
                                 </ul>
 
                                 <div className="flex flex-wrap gap-2 pt-2 border-t border-zinc-800/50">
-                                    {job.tech.map((t, i) => {
-                                        const isGreen = t === "Mi Agencia" || t === "My Agency" || t === "+30 Streamers";
-                                        return (
-                                            <span key={i} className={`text-[10px] uppercase tracking-wider font-semibold px-2 py-1 rounded border ${isGreen ? "text-emerald-400 bg-emerald-400/10 border-emerald-400/20" : "text-zinc-500 bg-zinc-950 border-zinc-900"}`}>
-                                                {t}
-                                            </span>
-                                        );
-                                    })}
+                                    {job.tech.map((t, i) => (
+                                        <span key={i} className="text-[10px] uppercase tracking-wider font-semibold text-zinc-500 bg-zinc-950 px-2 py-1 rounded border border-zinc-900">
+                                            {t}
+                                        </span>
+                                    ))}
                                 </div>
                             </div>
                         </div>
