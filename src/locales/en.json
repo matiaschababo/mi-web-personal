@@ -109,124 +109,129 @@
             }
         }
     },
-    "projects": {
-        "title": "Projects",
-        "subtitle": "Systems deployed in production. Real results.",
-        "view_details": "View Details",
-        "view_project": "View Project",
-        "my_role": "My Role",
-        "sections": {
-            "challenge": "The Challenge",
-            "solution": "The Solution",
-            "result": "The Result"
+    "tags": {
+        "my_agency": "My Agency",
+        "plus_30_streamers": "+30 Streamers"
+    }
+},
+"projects": {
+    "title": "Projects",
+    "subtitle": "Systems deployed in production. Real results.",
+    "view_details": "View Details",
+    "view_project": "View Project",
+    "my_role": "My Role",
+    "sections": {
+        "challenge": "The Challenge",
+        "solution": "The Solution",
+        "result": "The Result"
+    },
+    "items": {
+        "zeroed": {
+            "title": "Zeroed Growth",
+            "subtitle": "Precision Growth Infrastructure",
+            "category": "Growth Infrastructure",
+            "role": "Founder",
+            "description": "Infrastructure designed to eliminate operational fat and focus exclusively on the signal (ROI).",
+            "challenge": "The Origin: For 5 years I operated at the extremes of the digital spectrum: from scaling communities of 200k+ users at Coinary to producing 100k-viewer events at Mix On. In that process, I detected a systemic inefficiency: the market is saturated with 'Noise'. Brands burn budget on vanity metrics and slow agencies. Zeroed was born not as just another agency, but as the answer to that inefficiency.",
+            "solution": "The Thesis: My thesis is simple: Precision Over Noise. Zeroed is the culmination of my experience managing risk and volume. We don't seek to 'sell services', we seek to deploy systems. We merge traffic engineering (Meta Ads) with automation (AI/n8n) to create an acquisition model that doesn't rely on luck, but on data architecture.",
+            "result": "The Leverage: This project was not born from cold pitching. Zeroed was built on the foundation of reputation and results obtained in the trenches of Betbits and Web3. It is the materialization of my work method: aggressive on objectives, surgical in execution.",
+            "metrics": {
+                "0": "Precision Over Noise",
+                "1": "Ad Tech Architecture",
+                "2": "Full-Stack Growth"
+            }
         },
-        "items": {
-            "zeroed": {
-                "title": "Zeroed Growth",
-                "subtitle": "Precision Growth Infrastructure",
-                "category": "Growth Infrastructure",
-                "role": "Founder",
-                "description": "Infrastructure designed to eliminate operational fat and focus exclusively on the signal (ROI).",
-                "challenge": "The Origin: For 5 years I operated at the extremes of the digital spectrum: from scaling communities of 200k+ users at Coinary to producing 100k-viewer events at Mix On. In that process, I detected a systemic inefficiency: the market is saturated with 'Noise'. Brands burn budget on vanity metrics and slow agencies. Zeroed was born not as just another agency, but as the answer to that inefficiency.",
-                "solution": "The Thesis: My thesis is simple: Precision Over Noise. Zeroed is the culmination of my experience managing risk and volume. We don't seek to 'sell services', we seek to deploy systems. We merge traffic engineering (Meta Ads) with automation (AI/n8n) to create an acquisition model that doesn't rely on luck, but on data architecture.",
-                "result": "The Leverage: This project was not born from cold pitching. Zeroed was built on the foundation of reputation and results obtained in the trenches of Betbits and Web3. It is the materialization of my work method: aggressive on objectives, surgical in execution.",
-                "metrics": {
-                    "0": "Precision Over Noise",
-                    "1": "Ad Tech Architecture",
-                    "2": "Full-Stack Growth"
-                }
-            },
-            "pelea": {
-                "title": "The Fight of the Year",
-                "subtitle": "General Production & Streaming",
-                "category": "General Production",
-                "role": "General Event Producer",
-                "description": "Complete orchestration of the city's largest streaming event.",
-                "challenge": "The biggest challenge was High-Profile Talent Management (coordination and logistics of 14 content creators for 7 boxing matches) and coordinating a low-latency broadcast for 100k concurrent viewers.",
-                "solution": "Integral Showrunning: Creation of technical script (Run of Show), timelines, and minute-by-minute live broadcast supervision. Implemented a hybrid network architecture with 5G redundancy and designed a physical 'Social Hub' to synchronize hype.",
-                "result": "Massive Impact: Responsible for the distribution strategy that generated +20 Million short-form views and retained 100k live viewers. Broke national viewership records for an event of this type.",
-                "metrics": {
-                    "0": "20M+ Total Views",
-                    "1": "100k Live Viewers",
-                    "2": "14 Influencers"
-                }
-            },
-            "binance": {
-                "title": "Binance IGO",
-                "subtitle": "Web3 Growth & Launchpad",
-                "category": "Web3 & Crypto",
-                "role": "Marketing Lead, Launch Strategy",
-                "description": "Execution of global campaign for token and NFT launch in a high-volatility market.",
-                "challenge": "Launching an Initial Game Offering (IGO) during a period of high market saturation, where user trust was low and traditional advertising platforms (Meta/Google) constantly blocked crypto ads.",
-                "solution": "Developed a 'Guerrilla Growth' strategy. Used niche influencers in Tier 2 and 3 regions (SEA/LATAM) and built a gamified reward system on Discord. For Paid Media, used educational 'bridge' landing pages to pass ad approval filters.",
-                "result": "Achieved Sold Out in minutes on Binance platform. Discord community grew to 50k real active members (no bots) and Cost Per Acquisition (CPA) was reduced by 60% compared to industry benchmark.",
-                "metrics": {
-                    "0": "$1M+ Raised",
-                    "1": "Binance Partner",
-                    "2": "20% CTR Meta Ads"
-                }
-            },
-            "betbits": {
-                "title": "Automations for Betbits",
-                "subtitle": "AI Automation Ecosystem",
-                "category": "iGaming",
-                "role": "No-Code Developer & Prompt Engineer",
-                "description": "Solution to data analysis and SEO bottlenecks using AI agents.",
-                "challenge": "The marketing team was losing 15 hours a week analyzing GA4 reports and writing basic SEO articles to maintain organic traffic, limiting time for creative strategy.",
-                "solution": "Created an automation pipeline using n8n and the Gemini API. 1) One agent reads GA4 data and generates a daily executive summary in Slack. 2) Another agent takes search trends and writes optimized SEO drafts requiring only human review.",
-                "result": "Eliminated 40% of manual operational load. SEO content production tripled without hiring extra staff, and the team could focus on conversion optimization, increasing global ROI.",
-                "metrics": {
-                    "0": "0xInfra SEO",
-                    "1": "-40% Ops Time",
-                    "2": "Auto GA4"
-                }
-            },
-            "youtube": {
-                "title": "YouTube Management",
-                "subtitle": "Channel Scaling & Content Strategy",
-                "category": "Audiovisual Production",
-                "role": "General Producer & YouTube Manager",
-                "description": "Integral management of video-first ecosystems. From high-CTR thumbnail conceptualization to executive production of content for massive channels like CoinaryTV.",
-                "challenge": "Achieving visual consistency and quality in a high-frequency publishing environment, maintaining audience retention in competitive niches.",
-                "solution": "Implemented chain production processes (Factory Model) for thumbnails and editing. Optimized titles and metadata based on real-time trend analysis.",
-                "result": "Sustained growth of the main channel to over 200,000 subscribers. Establishment of a solid and recognizable visual identity on the platform.",
-                "metrics": {
-                    "0": "+200k Subscribers",
-                    "1": "Millions of Views",
-                    "2": "High Retention"
-                }
-            },
-            "social": {
-                "title": "Social Media Growth",
-                "subtitle": "Multi-Platform Community Architecture",
-                "category": "Marketing",
-                "role": "Social Media Manager & Community Lead",
-                "description": "Orchestration of unified digital presence for Coinary, Mix On, and Betbits across Instagram, TikTok, Twitter, Telegram, and Discord.",
-                "challenge": "Maintaining a coherent brand voice adapted to each platform (e.g., formality on LinkedIn vs. virality on TikTok) and managing active communities in real-time.",
-                "solution": "Developed scalable community management systems using moderation bots and recyclable content flows to maximize reach with optimized resources.",
-                "result": "Vibrant and safe communities on Discord and Telegram. Organic social media growth through native content strategies for each platform.",
-                "metrics": {
-                    "0": "+5 Communities",
-                    "1": "Cross Engagement",
-                    "2": "24/7 Support"
-                }
+        "pelea": {
+            "title": "The Fight of the Year",
+            "subtitle": "General Production & Streaming",
+            "category": "General Production",
+            "role": "General Event Producer",
+            "description": "Complete orchestration of the city's largest streaming event.",
+            "challenge": "The biggest challenge was High-Profile Talent Management (coordination and logistics of 14 content creators for 7 boxing matches) and coordinating a low-latency broadcast for 100k concurrent viewers.",
+            "solution": "Integral Showrunning: Creation of technical script (Run of Show), timelines, and minute-by-minute live broadcast supervision. Implemented a hybrid network architecture with 5G redundancy and designed a physical 'Social Hub' to synchronize hype.",
+            "result": "Massive Impact: Responsible for the distribution strategy that generated +20 Million short-form views and retained 100k live viewers. Broke national viewership records for an event of this type.",
+            "metrics": {
+                "0": "20M+ Total Views",
+                "1": "100k Live Viewers",
+                "2": "14 Influencers"
+            }
+        },
+        "binance": {
+            "title": "Binance IGO",
+            "subtitle": "Web3 Growth & Launchpad",
+            "category": "Web3 & Crypto",
+            "role": "Marketing Lead, Launch Strategy",
+            "description": "Execution of global campaign for token and NFT launch in a high-volatility market.",
+            "challenge": "Launching an Initial Game Offering (IGO) during a period of high market saturation, where user trust was low and traditional advertising platforms (Meta/Google) constantly blocked crypto ads.",
+            "solution": "Developed a 'Guerrilla Growth' strategy. Used niche influencers in Tier 2 and 3 regions (SEA/LATAM) and built a gamified reward system on Discord. For Paid Media, used educational 'bridge' landing pages to pass ad approval filters.",
+            "result": "Achieved Sold Out in minutes on Binance platform. Discord community grew to 50k real active members (no bots) and Cost Per Acquisition (CPA) was reduced by 60% compared to industry benchmark.",
+            "metrics": {
+                "0": "$1M+ Raised",
+                "1": "Binance Partner",
+                "2": "20% CTR Meta Ads"
+            }
+        },
+        "betbits": {
+            "title": "Automations for Betbits",
+            "subtitle": "AI Automation Ecosystem",
+            "category": "iGaming",
+            "role": "No-Code Developer & Prompt Engineer",
+            "description": "Solution to data analysis and SEO bottlenecks using AI agents.",
+            "challenge": "The marketing team was losing 15 hours a week analyzing GA4 reports and writing basic SEO articles to maintain organic traffic, limiting time for creative strategy.",
+            "solution": "Created an automation pipeline using n8n and the Gemini API. 1) One agent reads GA4 data and generates a daily executive summary in Slack. 2) Another agent takes search trends and writes optimized SEO drafts requiring only human review.",
+            "result": "Eliminated 40% of manual operational load. SEO content production tripled without hiring extra staff, and the team could focus on conversion optimization, increasing global ROI.",
+            "metrics": {
+                "0": "0xInfra SEO",
+                "1": "-40% Ops Time",
+                "2": "Auto GA4"
+            }
+        },
+        "youtube": {
+            "title": "YouTube Management",
+            "subtitle": "Channel Scaling & Content Strategy",
+            "category": "Audiovisual Production",
+            "role": "General Producer & YouTube Manager",
+            "description": "Integral management of video-first ecosystems. From high-CTR thumbnail conceptualization to executive production of content for massive channels like CoinaryTV.",
+            "challenge": "Achieving visual consistency and quality in a high-frequency publishing environment, maintaining audience retention in competitive niches.",
+            "solution": "Implemented chain production processes (Factory Model) for thumbnails and editing. Optimized titles and metadata based on real-time trend analysis.",
+            "result": "Sustained growth of the main channel to over 200,000 subscribers. Establishment of a solid and recognizable visual identity on the platform.",
+            "metrics": {
+                "0": "+200k Subscribers",
+                "1": "Millions of Views",
+                "2": "High Retention"
+            }
+        },
+        "social": {
+            "title": "Social Media Growth",
+            "subtitle": "Multi-Platform Community Architecture",
+            "category": "Marketing",
+            "role": "Social Media Manager & Community Lead",
+            "description": "Orchestration of unified digital presence for Coinary, Mix On, and Betbits across Instagram, TikTok, Twitter, Telegram, and Discord.",
+            "challenge": "Maintaining a coherent brand voice adapted to each platform (e.g., formality on LinkedIn vs. virality on TikTok) and managing active communities in real-time.",
+            "solution": "Developed scalable community management systems using moderation bots and recyclable content flows to maximize reach with optimized resources.",
+            "result": "Vibrant and safe communities on Discord and Telegram. Organic social media growth through native content strategies for each platform.",
+            "metrics": {
+                "0": "+5 Communities",
+                "1": "Cross Engagement",
+                "2": "24/7 Support"
             }
         }
-    },
-    "contact": {
-        "title": "Contact"
-    },
-    "stack": {
-        "title": "Tech Stack & Tools",
-        "subtitle": "Execution and architecture tools.",
-        "categories": {
-            "Marketing": "Marketing",
-            "IA/Automatización": "AI & Automation",
-            "Producción/Diseño": "Production & Design",
-            "Web": "Web Development"
-        }
-    },
-    "thumbnails": {
-        "title": "Best CTR Thumbnails"
     }
+},
+"contact": {
+    "title": "Contact"
+},
+"stack": {
+    "title": "Tech Stack & Tools",
+    "subtitle": "Execution and architecture tools.",
+    "categories": {
+        "Marketing": "Marketing",
+        "IA/Automatización": "AI & Automation",
+        "Producción/Diseño": "Production & Design",
+        "Web": "Web Development"
+    }
+},
+"thumbnails": {
+    "title": "Best CTR Thumbnails"
+}
 }

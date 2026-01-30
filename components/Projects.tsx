@@ -129,7 +129,7 @@ export const Projects: React.FC = () => {
     if (lower.includes('produc') || lower.includes('general')) return 'bg-red-500/10 border-red-500/30 text-red-400';
     if (lower.includes('audiovisual')) return 'bg-red-500/10 border-red-500/30 text-red-400';
     if (lower.includes('igaming')) return 'bg-green-500/10 border-green-500/30 text-green-400';
-    if (lower.includes('growth')) return 'bg-orange-500/10 border-orange-500/30 text-orange-400';
+    if (lower.includes('growth') || lower.includes('crecimiento')) return 'bg-orange-500/10 border-orange-500/30 text-orange-400';
     return 'bg-purple-500/10 border-purple-500/30 text-purple-400';
   };
 
